@@ -2,6 +2,13 @@ plugins {
 	id 'java'
 	id 'org.springframework.boot' version '3.2.3'
 	id 'io.spring.dependency-management' version '1.1.4'
+	id 'war'
+}
+
+bootWar { 
+	archiveBaseName='pict-demo2'
+	archiveFileName='pict-demo2.war'
+	archiveVersion='0.0.0'
 }
 
 group = 'pict'
@@ -31,14 +38,14 @@ dependencies {
 	implementation group: 'com.mysql', name: 'mysql-connector-j', version: '8.0.32'
 	
 	//JSTL
-
 	implementation 'jakarta.servlet:jakarta.servlet-api' //스프링부트 3.0 이상
    	implementation 'jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api' //스프링부트 3.0 이상
 	implementation 'org.glassfish.web:jakarta.servlet.jsp.jstl' //스프링부트 3.0 이상
-	
-	
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 
+
+	//War
+	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
 	
 	compileOnly 'org.projectlombok:lombok'
 	runtimeOnly 'com.mysql:mysql-connector-j'
@@ -50,3 +57,7 @@ dependencies {
 tasks.named('test') {
 	useJUnitPlatform()
 }
+
+
+
+
