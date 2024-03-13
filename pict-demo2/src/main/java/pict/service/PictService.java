@@ -18,11 +18,20 @@ package pict.service;
 import java.util.List;
 
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 @Service
-@Transactional
+
 public interface PictService {	
     public List<?> test_service(PictVO pictVO) throws Exception;
+
+	public List<?> board_list(PictVO pictVO) throws Exception;
+
+	public PictVO board_list_one(PictVO pictVO) throws Exception;
+
+	public void board_update(PictVO pictVO) throws Exception;
+
+	public void board_insert(PictVO pictVO) throws Exception;
+
+	public void board_delete(PictVO pictVO) throws Exception;
 
 }

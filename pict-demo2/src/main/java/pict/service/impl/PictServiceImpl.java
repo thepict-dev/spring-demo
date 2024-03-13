@@ -37,6 +37,36 @@ public class PictServiceImpl implements PictService {
 		return pictMapper.test_service(pictVO);
 	}
 
+	@Override
+	public List<?> board_list(PictVO pictVO) throws Exception {
+		// TODO Auto-generated method stub
+		return pictMapper.board_list(pictVO);
+	}
+
+	@Override
+	public PictVO board_list_one(PictVO pictVO) throws Exception {
+		// TODO Auto-generated method stub
+		return pictMapper.board_list_one(pictVO);
+	}
+
+	@Override
+	public void board_update(PictVO pictVO) throws Exception {
+		// TODO Auto-generated method stub
+		pictMapper.board_update(pictVO);
+	}
+
+	@Override
+	public void board_insert(PictVO pictVO) throws Exception {
+		// TODO Auto-generated method stub
+		pictMapper.board_insert(pictVO);
+	}
+
+	@Override
+	public void board_delete(PictVO pictVO) throws Exception {
+		// TODO Auto-generated method stub
+		pictMapper.board_delete(pictVO);
+	}
+
 	
 	
 }

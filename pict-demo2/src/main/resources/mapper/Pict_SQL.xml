@@ -8,4 +8,43 @@
 	</select>
 	
 	
+	
+	<select id="board_list" resultType="pictVO">
+		select *
+		from board_table
+		<if test="search_text != null and search_text != '' ">
+			where (
+				title LIKE CONCAT('%', #{search_text}, '%')
+			) 
+		</if>
+	</select>
+	
+	<select id="board_list_one" resultType="pictVO">
+		select * from board_table
+		where idx = #{idx}
+	</select>
+	
+	<insert id="board_insert" parameterType="pictVO">
+		INSERT INTO board_table
+			(
+			 title,  text, reg_date, img_1
+			)
+		VALUES (
+			 #{title}, #{text}, now(), #{img_1}
+			  ) 
+	</insert>
+	
+	<update id="board_update" parameterType="pictVO">
+		update board_table
+		set title =#{title}, text = #{text}, reg_date = now()
+		<if test="img_1 != null and img_1 != '' ">
+			, img_1 = #{img_1}
+		</if>
+	
+		where idx = #{idx}
+	</update>
+	
+	<delete id="board_delete" parameterType="pictVO">
+		delete from board_table where idx = #{idx}
+	</delete>
 </mapper>

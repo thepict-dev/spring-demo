@@ -26,6 +26,16 @@ import pict.service.PictVO;
 public interface PictMapper {
 	
 	List<?> test_service(PictVO pictVO) throws Exception;
+
+	List<?> board_list(PictVO pictVO) throws Exception;
+
+	PictVO board_list_one(PictVO pictVO) throws Exception;
+
+	void board_update(PictVO pictVO) throws Exception;
+
+	void board_insert(PictVO pictVO) throws Exception;
+
+	void board_delete(PictVO pictVO) throws Exception;
 	
 
 }
