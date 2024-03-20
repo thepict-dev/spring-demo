@@ -1,110 +1,81 @@
-// AOS
 AOS.init();
-// 네비 엑티브
-var pageUrl = window.location.href; 
-$(window).on('load', function(){ 
-    $('.nav').siblings('a').removeClass('active');
-    if (pageUrl.indexOf('business') > -1) {
-        $('.nav').eq(0).addClass('active');
-    } else if (pageUrl.indexOf('faq') > -1) {
-        $('.nav').eq(1).addClass('active');
-    } else if (pageUrl.indexOf('notice') > -1) {
-        $('.nav').eq(2).addClass('active');
-    } else if (pageUrl.indexOf('account') > -1) {
-        $('.nav').eq(3).addClass('active');
-    } else if (pageUrl.indexOf('noti') > -1) {
-        $('.nav').eq(4).addClass('active');
-    };
-});
-// 헤더 스크롤
-let scrUp ="";
-let scrDown ="";
 
-$(window).scroll(function() {
-    setTimeout(function(){
-        scrUp = $(window).scrollTop();
-    }, 10);
-    setTimeout(function(){
-        scrDown = $(window).scrollTop();
-    }, 20);
 
-    setTimeout(function(){
-        if(scrUp > scrDown){
-            $("header").css('top', 0);
-        }
-        if(scrUp < scrDown){
-            $("header").css('top', '-140px');
-        }
-    }, 20);
+//스크롤 엄지 클래스
+$(window).on('scroll', function () {
+    if ($(window).scrollTop() < 845) {
+        $('.thumb').removeClass('off');
+    } else {
+        $('.thumb').addClass('off');
+    }
 });
 
-// 모바일 네비
-$(".mbHeader > button").click(function(){
-    $(".mbNav").fadeToggle().css("display", "flex");
+//스크롤 엄지
+let scrollTop = 0;
+
+$(window).on('scroll', function(){
+	
+	scrollTop = $(window).scrollTop();
+	
+	$('.thumb1').css('transform', 'translateX(' + scrollTop * -0.15 + 'px)');
+	$('.thumb2').css('transform', 'translateX(' + scrollTop * -0.15 + 'px)');
+	$('.thumb3').css('transform', 'translateX(' + scrollTop * 0.15 + 'px)');
+	$('.thumb4').css('transform', 'translateX(' + scrollTop * 0.15 + 'px)');
+})
+	
+//h2 스크롤 밑줄
+//$(window).scroll(function() {
+//	var scroll = $(document).scrollTop();
+//	var minusH = $(document).innerHeight() / 10;
+//	var target1 = $('.subTitles span').offset().top;//
+//	if (scroll > target1 - minusH) {
+//		$('.subTitles span').addClass('active');
+//	}
+//});
+
+//비디오 모달
+const modal = document.querySelector(".videoModal");
+
+//모달창 버튼을 클릭하면 모달을 나타나게 한다.
+const btnModal = document.querySelector(".video");
+btnModal.addEventListener("click", e =>{
+    modal.style.display = "flex";
 });
 
-//팝업존 스와이퍼
-$(function(){
-    //main visual slide
-    var mainSlide = new Swiper('.swiper', {
-        autoplay: {
-            delay: 2000 // 자동으로 화면 전환
+//모달창의 x를 누르면 모달창이 사라진다.
+// const closeBtn = modal.querySelector(".close-area");
+// closeBtn.addEventListener("click", evt => {
+//     modal.style.display = "none";
+// });
+
+//모달창의 바깥 영역을 클릭하면 꺼지게 한다.
+modal.addEventListener("click", e=>{
+    const evTarget = e.target;
+    if(evTarget.classList.contains("videoModal")){
+        modal.style.display="none";
+    }
+});
+    
+//스와이퍼
+const swiper1 = new Swiper('.swiper-container', {
+    autoplay: {
+      delay: 1000,
+      disableOnInteraction: false
+    },
+    pagination: false,
+    slidesPerView: "auto",
+    spaceBetween: 20,
+    loop: true,	// 무한 루프 적용
+    speed: 1000,
+    breakpoints: {
+        0: {
+            slidesPerView: 1.7,
         },
-        slidesPerView: 1,	// 화면에 보여주는 이미지 개수
-        loop: true,	// 무한 루프 적용
-        pagination: {	// 하단에 점 표시 적용
-            el: '.swiper-pagination',
-            clickable: 'true',
+        769: {
+            slidesPerView: 2.5,  //브라우저가 768보다 클 때
         },
-        speed: 1000,
-    });
-});
-// 명산리스트 스와이퍼
-// 명산리스트 스와이퍼
-$(function(){
-    //main visual slide
-    var subSlide = new Swiper('.swiper02', {
-        autoplay: {
-            delay: 1000 // 자동으로 화면 전환
+        1025: {
+            slidesPerView: 4.7,  //브라우저가 1024보다 클 때
         },
-        pagination: false,
-        slidesPerView: 4.5,	// 화면에 보여주는 이미지 개수
-        loop: true,	// 무한 루프 적용
-        speed: 1000,
-        breakpoints: {
-            0: {
-            	slidesPerGroup : 1,
-                slidesPerView: 1.7,
-                spaceBetween: 20,
-            },
-            769: {
-              slidesPerGroup : 1,
-              slidesPerView: 2.5,  //브라우저가 768보다 클 때
-              spaceBetween: 20,
-            },
-            1025: {
-              slidesPerGroup : 1,
-              slidesPerView: 3.5,  //브라우저가 1024보다 클 때
-              spaceBetween: 20,
-            },
-        }
-    });
+    }
 });
-// 탭
-
-
-// 모바일 셀렉트 탭
-// for (const option of document.querySelectorAll(".custom-option")) {
-//     option.addEventListener('click', function() {
-//         if (!this.classList.contains('selected')) {
-//             this.parentNode.querySelector('.custom-option.selected').classList.remove('selected');
-//             this.classList.add('selected');
-//             this.closest('.select').querySelector('.select__trigger span').textContent = this.textContent;
-//         }
-//     })
-// }
-
-// 탭 클릭 컨텐츠 슬라이드 업
-// $('.tabNav > li').click(function(){
-//     $('.intro').css('top', '0');
-// })

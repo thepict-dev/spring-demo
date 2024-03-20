@@ -1,91 +1,53 @@
 footer{
-    display: flex;
-    justify-content: center;
     width: 100%;
-    padding: 62px 0 73px 0;
-    background-color: #003c83;
+    max-width: 1920px;
+    height: 237px;
+    margin: 0 auto;
+    padding: 0 100px;
 }
-.fInner{
+.footerInner{
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
+}
+.fInfo > p{
+    color: var(--green-500);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 100%; /* 16px */
+    letter-spacing: -0.8px;
 }
 .fLogo{
-	display: block;
-	width: 250px;
-	
+    width: 215px;
+} 
+.fLogo a{
+    display: block;
+    width: 100%;
 }
-.fLogo img{
-	width : 100%;
+.fLogo a img{
+    width: 100%;
 }
-.famSite{
+.sns{
     display: flex;
-    align-items: center;
-    margin-top: 15.6px;
+    column-gap: 34px;
+    padding: 24px 0;
 }
-.famSite a:first-child{
-    margin-right: 53px;
-}
-.famSite a{
-	display: block;
-	width : 200px;
-}
-.famSite a img{
-	width : 100%;
-}
-.fInfo{
+.tel{
     display: flex;
-    justify-content: center;
-    row-gap: 10px;
-    flex-wrap: wrap;
-    margin-top: 48.7px;
-    font-size: 20px;
-    font-family: var(--fn-sans);
-    letter-spacing: -0.4px;
-    color: #fff;
+    align-items: flex-end;
+    column-gap: 12px;
 }
-.fInfo li:nth-of-type(-n + 3){
-    margin-right: 50px;
+.tel span{
+    padding-bottom: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 100%; /* 16px */
+    letter-spacing: -0.8px;
 }
-.fInfo li span{
-    padding-right: 10px;
-}
-
-@media all and (max-width : 1024px){
-    .fInner{
-        padding: 0 30px;
-    }
-    .fLogo > img{
-    	width: 100%;
-    }
-    .famSite > a:first-child{
-    	max-width: 150px;
-    }
-    .famSite > a:last-child{
-    	max-width: 153.3px;
-    }
-    .famSite > a > img{
-    	width: 100%;
-    }
-    .fInfo{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: 48.7px;
-        font-size: 14px;
-        letter-spacing: -0.28px;
-        text-align: center;
-    }
-    .fInfo li{
-        justify-content: center;
-        /* width: 50%; */
-        padding:  0 20px 8px 0;
-    }
-    .fInfo li:nth-of-type(-n + 3){
-        margin-right: 0;
-    }
-    .fInfo li span{
-        padding-right: 5px;
-    }
+.tel p{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 100%; /* 40px */
+    letter-spacing: -2px;
 }

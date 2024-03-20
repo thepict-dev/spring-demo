@@ -139,7 +139,22 @@ public class PictController {
 		return "redirect:/pict_login.do";
 		
 	}
-	   	   
+	   	  
+    
+    
+    //사용자
+    //메인 
+    @RequestMapping(value = "/front/ko/main.do")
+	public String main(@ModelAttribute("searchVO") PictVO pictVO, ModelMap model, HttpServletRequest request) throws Exception {
+
+		return "pict/front/ko/main";
+	}
+    
+    
+    
+    
+    
+    
 	  //공지사항
     @RequestMapping(value = "/board/board_list.do")
 	public String reference_list(@ModelAttribute("searchVO") PictVO pictVO, ModelMap model, HttpServletRequest request) throws Exception {
