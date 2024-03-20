@@ -110,7 +110,7 @@
 
 	<div class="login-wrapper">
 	    <div class="login-wrap">
-        	<h1 class="login-title"><img src="/front_img/mainlogo_color.png" alt="명산" style="width:100%"></h1>
+        	<h1 class="login-title"><img src="/front_img/logo.png" alt="라이징스타" style="width:100%"></h1>
 	        <div class="login-box">
 		        <form action="#" id="entryForm" name="entryForm" method="post">
 	                <div class="login-inner">

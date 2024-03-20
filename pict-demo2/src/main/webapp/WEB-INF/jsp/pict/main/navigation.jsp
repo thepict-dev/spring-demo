@@ -8,7 +8,7 @@
 <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
     <h1 class="header-logo">
     	<a class="navbar-brand ps-3" href="/pict_main.do">
-    		<img src="/front_img/mainlogo_color.png" alt="명산" style="position:relative; left:10px; width:75%">
+    		<img src="/front_img/logo.png" alt="라이징스타" style="position:relative; left:10px; width:75%">
    		</a>
 	</h1>
     <div class="header-info">
