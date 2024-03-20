@@ -20,17 +20,26 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 
 @Service
-public interface PictService {	
-    public List<?> test_service(PictVO pictVO) throws Exception;
+public interface AdminService {
 
-	public List<?> board_list(PictVO pictVO) throws Exception;
+	AdminVO get_user_info(AdminVO adminVO) throws Exception;
+	
+	void insert_user(AdminVO adminVO) throws Exception;
 
-	public PictVO board_list_one(PictVO pictVO) throws Exception;
+	List<?> user_list(AdminVO adminVO) throws Exception;
 
-	public void board_update(PictVO pictVO) throws Exception;
+	void user_reset(AdminVO adminVO) throws Exception;
 
-	public void board_insert(PictVO pictVO) throws Exception;
+	void insert_login_info(AdminVO adminVO) throws Exception;
 
-	public void board_delete(PictVO pictVO) throws Exception;
+	void insert_meta(AdminVO adminVO)throws Exception;
 
+	void dafault_template(PictVO pictVO)throws Exception;
+
+	AdminVO user_select_one(AdminVO adminVO) throws Exception;
+
+	void update_user(AdminVO adminVO)throws Exception;
+
+	void user_delete(AdminVO adminVO) throws Exception;
+	
 }

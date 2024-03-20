@@ -9,10 +9,16 @@
 
 <!DOCTYPE html>
 <html lang="ko">
-
+<c:import url="../main/header.jsp">
+	<c:param name="pageTitle" value="게시물 등록" />
+</c:import>
 <body class="sb-nav-fixed">
 	<form action="" id="register" name="register" method="post" enctype="multipart/form-data">
+		<%@include file="../main/navigation.jsp"%>
 		<div id="layoutSidenav">
+			<div id="layoutSidenav_nav">
+				<%@include file="../main/gnb.jsp"%>
+			</div>
 			<div id="layoutSidenav_content">
 				<main class="contents">
 					<h2 class="contents-title">게시물 등록</h2>
