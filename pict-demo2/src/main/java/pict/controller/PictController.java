@@ -39,6 +39,8 @@ public class PictController {
 	@Autowired
 	AdminService adminService;
 
+
+	
 	@RequestMapping("/pict_main.do")
 	public String pict_main(@ModelAttribute("pictVO") AdminVO adminVO, HttpServletRequest request, ModelMap model,
 			HttpSession session, RedirectAttributes rttr) throws Exception {
@@ -141,6 +143,12 @@ public class PictController {
 	}
 
 	// 사용자
+	
+	@RequestMapping("/")
+	public String main(@ModelAttribute("pictVO") AdminVO adminVO, HttpServletRequest request, ModelMap model,
+			HttpSession session, RedirectAttributes rttr) throws Exception {
+		return "redirect:/front/ko/main.do";
+	}
 	// 메인
 	@RequestMapping(value = "/front/ko/main.do")
 	public String main(@ModelAttribute("pictVO") PictVO pictVO, ModelMap model, HttpServletRequest request)
