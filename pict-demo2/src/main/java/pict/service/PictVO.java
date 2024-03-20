@@ -15,6 +15,8 @@
  */
 package pict.service;
 
+import org.springframework.web.multipart.MultipartFile;
+
 /**
  * @Class Name : SampleVO.java
  * @Description : SampleVO Class
@@ -130,9 +132,103 @@ public class PictVO extends PictDefaultVO {
 	private String img_3;
 	private String img_4;
 	private String img_5;
+	private String file_1;
+	private String file_2;
+	private String file;
+	private String news_title;
+	private String imgurl;
+	private String videourl;
+	private String regdate;
+	private String linkurl;
+	private String newstitle;
+	private String file1;
+	private String file2;
+	
+	private MultipartFile file1root;
+	private MultipartFile file2root;
 	
 	
-	
+
+	public MultipartFile getFile1root() {
+		return file1root;
+	}
+	public void setFile1root(MultipartFile file1root) {
+		this.file1root = file1root;
+	}
+	public MultipartFile getFile2root() {
+		return file2root;
+	}
+	public void setFile2root(MultipartFile file2root) {
+		this.file2root = file2root;
+	}
+	public String getFile1() {
+		return file1;
+	}
+	public void setFile1(String file1) {
+		this.file1 = file1;
+	}
+	public String getFile2() {
+		return file2;
+	}
+	public void setFile2(String file2) {
+		this.file2 = file2;
+	}
+	public String getImgurl() {
+		return imgurl;
+	}
+	public void setImgurl(String imgurl) {
+		this.imgurl = imgurl;
+	}
+	public String getVideourl() {
+		return videourl;
+	}
+	public void setVideourl(String videourl) {
+		this.videourl = videourl;
+	}
+	public String getRegdate() {
+		return regdate;
+	}
+	public void setRegdate(String regdate) {
+		this.regdate = regdate;
+	}
+	public String getLinkurl() {
+		return linkurl;
+	}
+	public void setLinkurl(String linkurl) {
+		this.linkurl = linkurl;
+	}
+	public String getNewstitle() {
+		return newstitle;
+	}
+	public void setNewstitle(String newstitle) {
+		this.newstitle = newstitle;
+	}
+
+	public String getNews_title() {
+		return news_title;
+	}
+	public void setNews_title(String news_title) {
+		this.news_title = news_title;
+	}
+	public String getFile() {
+		return file;
+	}
+	public void setFile(String file) {
+		this.file = file;
+	}
+	public String getFile_1() {
+		return file_1;
+	}
+	public void setFile_1(String file_1) {
+		this.file_1 = file_1;
+	}
+	public String getFile_2() {
+		return file_2;
+	}
+	public void setFile_2(String file_2) {
+		this.file_2 = file_2;
+	}
+
 	public String getImg_1() {
 		return img_1;
 	}

@@ -10,7 +10,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 	<c:import url="../main/header.jsp">
-		<c:param name="pageTitle" value="게시물 리스트"/>
+		<c:param name="pageTitle" value="보도자료 리스트"/>
 	</c:import>
     <body class="sb-nav-fixed">
     <%@include file="../main/navigation.jsp" %>
@@ -20,7 +20,7 @@
 			</div>
 			<div id="layoutSidenav_content">
 				<main class="contents">
-					<h2 class="contents-title">게시물 리스트</h2>
+					<h2 class="contents-title">보도자료 리스트</h2>
 					<div class="contents-box">
 						<div class="card">
 						    <div class="card-body">
@@ -50,10 +50,10 @@
 								            <c:forEach var="resultList" items="${resultList}" varStatus="status">
 								                <tr>
 							                    	<td>${status.count}</td>
-							                    	<td class="opt-tl"><a href="javascript:void(0);" onclick="board_mod('${resultList.idx}');" class="link">${resultList.title}</a></td>
+							                    	<td class="opt-tl"><a href="javascript:void(0);" onclick="news_mod('${resultList.idx}');" class="link">${resultList.title}</a></td>
 							                    	<td>${resultList.regdate}</td>
 							                    	<td>
-							                    		<button type="button" onclick="javascript:board_delete('${resultList.idx}')" class="btn-basic btn-fill btn-sm">삭제</button>
+							                    		<button type="button" onclick="javascript:news_delete('${resultList.idx}')" class="btn-basic btn-fill btn-sm">삭제</button>
 									            	</td>
 								                </tr>
 							                </c:forEach>
@@ -64,7 +64,7 @@
 			            </div>
 		            </div>
 		            <!-- <div style="float : right; margin-right: 20%">
-			            <button type="button" id="button1" onclick="board_list();">게시글 리스트</button>
+			            <button type="button" id="button1" onclick="news_list();">게시글 리스트</button>
 		            </div> -->
 				</main>
 			</div>
@@ -76,22 +76,22 @@
 		</form>
 		<script>
 
-			function board_mod(idx){
-				location.href= "/board/board_register.do?idx="+ idx;
+			function news_mod(idx){
+				location.href= "/news/news_register.do?idx="+ idx;
 			}
-			function board_list(){
-				location.href= "/board/board_list.do";
+			function news_list(){
+				location.href= "/news/news_list.do";
 			}
-			function board_delete(idx) {
+			function news_delete(idx) {
 				if (confirm("삭제 하시겠습니까?")) {
 					$('#idx').val(idx)
-					$("#register").attr("action", "/board/board_delete.do");
+					$("#register").attr("action", "/news/news_delete.do");
 					$("#register").submit();
 				}
 			}
 			
 			function search(){
-				$("#search_fm").attr("action", "/board/board_list.do");
+				$("#search_fm").attr("action", "/news/news_list.do");
 				$("#search_fm").submit();
 			}
 		</script>

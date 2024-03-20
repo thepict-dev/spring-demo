@@ -49,6 +49,9 @@ dependencies {
 	
 	//Base64
 	implementation group: 'commons-codec', name: 'commons-codec', version: '1.9'
+	
+	//파일업로드
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
 
 	
 	

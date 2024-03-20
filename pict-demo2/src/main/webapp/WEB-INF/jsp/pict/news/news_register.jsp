@@ -10,7 +10,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <c:import url="../main/header.jsp">
-	<c:param name="pageTitle" value="게시물 등록" />
+	<c:param name="pageTitle" value="보도자료 등록" />
 </c:import>
 <body class="sb-nav-fixed">
 	<form action="" id="register" name="register" method="post" enctype="multipart/form-data">
@@ -21,7 +21,7 @@
 			</div>
 			<div id="layoutSidenav_content">
 				<main class="contents">
-					<h2 class="contents-title">게시물 등록</h2>
+					<h2 class="contents-title">보도자료 등록</h2>
 					<div class="contents-box">
 						<div class="card">
 							<div class="card-body">
@@ -33,42 +33,30 @@
 										</div>
 									</div>
 								</div>
-								<div class="write-item">
-									<label for="title" class="title">내용</label>
-									<div class="input-box">
-										<textarea name="text" id="text" cols="30" rows="10" class="txt" style="width:100%;">${pictVO.text}</textarea>
-		                            	<!-- 에디터 설정 -->
-										<script type="text/javascript">
-											var oEditors = [];
-											nhn.husky.EZCreator.createInIFrame({
-												oAppRef: oEditors,
-												elPlaceHolder: "text", //textarea에서 지정한 id와 일치해야 합니다.
-												sSkinURI: "/js/SmartEditor2Skin.html",
-												fCreator: "createSEditor2"
-											});
-										</script>
-									</div>
-								</div>
-
-								<div class="write-item">
-									<label for="title" class="title">첨부파일</label>
-									<div class="input-box">
-										<input style="margin-bottom:15px" type="file" id="file1root" name="file1root" value="${pictVO.file1}" class="input opt-max-width-600">
 								
+								<div class="write-box">
+									<div class="write-item">
+										<label for="title" class="title">언론사</label>
+										<div class="input-box">
+											<input type="text" id="newstitle" name="newstitle" value="${pictVO.newstitle}" class="input opt-max-width-500">
+										</div>
 									</div>
 								</div>
-								<div class="write-item">
-									<label for="title" class="title">첨부파일</label>
-									<div class="input-box">
-										<input style="margin-bottom:15px" type="file" id="file2root" name="file2root" value="${pictVO.file2}" class="input opt-max-width-600">
 								
+								<div class="write-box">
+									<div class="write-item">
+										<label for="title" class="title">링크</label>
+										<div class="input-box">
+											<input type="text" id="linkurl" name="linkurl" value="${pictVO.linkurl}" class="input opt-max-width-500">
+										</div>
 									</div>
 								</div>
+								
 
 									
 								<div class="btn-box">
 									<c:if test="${pictVO.saveType eq 'update'}">
-										<button type="button" onclick="javascript:board_delete()" class="btn-basic btn-fill btn-sm">삭제</button>
+										<button type="button" onclick="javascript:news_delete()" class="btn-basic btn-fill btn-sm">삭제</button>
 									</c:if>
 									<c:if test="${pictVO.saveType eq 'insert'}">
 										<button type="button" onclick="button1_click();" class="btn-basic btn-primary btn-sm">등록</button>
@@ -76,7 +64,7 @@
 									<c:if test="${pictVO.saveType ne 'insert'}">
 										<button type="button" onclick="button1_click();" class="btn-basic btn-primary btn-sm">수정</button>
 									</c:if>
-						        	<button type="button" onclick="javascript:board_list();" class="btn-basic btn-common btn-sm">목록보기</button>    
+						        	<button type="button" onclick="javascript:news_list();" class="btn-basic btn-common btn-sm">목록보기</button>    
 					            </div>
 							</div>
 						</div>
@@ -93,15 +81,15 @@
 	</form>
 	
 	<script>
-		function board_delete() {
+		function news_delete() {
 			if (confirm("삭제 하시겠습니까?")) {
-				$("#register").attr("action", "/board/board_delete.do");
+				$("#register").attr("action", "/news/news_delete.do");
 				$("#register").submit();
 			}
 			
 		}
-		function board_list() {
-			location.href = "/board/board_list.do";
+		function news_list() {
+			location.href = "/news/news_list.do";
 		}
 		function button1_click() {
 			var title = $('#title').val();
@@ -111,15 +99,14 @@
 				$('#title').focus();
 				return false;
 			}
-			oEditors[0].exec("UPDATE_CONTENTS_FIELD", []);
-			
+
 			var text = "등록하시겠습니까?";
 			if (saveType == 'update') {
 				text = "수정하시겠습니까?"
 			}
 
 			if (confirm(text)) {
-				$("#register").attr("action", "/board/board_save.do");
+				$("#register").attr("action", "/news/news_save.do");
 				$("#register").submit();
 			}
 		}
