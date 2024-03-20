@@ -148,6 +148,35 @@ public class PictController {
 
 		return "pict/front/ko/main";
 	}
+	// 소개 
+	@RequestMapping(value = "/front/ko/intro.do")
+	public String ko_intro(@ModelAttribute("pictVO") PictVO pictVO, ModelMap model, HttpServletRequest request)
+			throws Exception {
+
+		return "pict/front/ko/intro";
+	}
+	// 영상 
+	@RequestMapping(value = "/front/ko/highlight.do")
+	public String highlight(@ModelAttribute("pictVO") PictVO pictVO, ModelMap model, HttpServletRequest request)
+			throws Exception {
+
+		return "pict/front/ko/highlight";
+	}
+	// 공지사항 리스트  
+	@RequestMapping(value = "/front/ko/board_list.do")
+	public String front_board(@ModelAttribute("pictVO") PictVO pictVO, ModelMap model, HttpServletRequest request)
+			throws Exception {
+
+		return "pict/front/ko/board_list";
+	}
+	// 공지사항   
+	@RequestMapping(value = "/front/ko/board_view.do")
+	public String board_view(@ModelAttribute("pictVO") PictVO pictVO, ModelMap model, HttpServletRequest request)
+			throws Exception {
+
+		return "pict/front/ko/board_view";
+	}
+	
 
 	// 공지사항
 	@RequestMapping(value = "/board/board_list.do")

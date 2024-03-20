@@ -13,17 +13,17 @@
             <p>2024 한강 라이징스타</p>
             <ul class="sns">
                 <li>
-                    <a href="" target="_blank" title="새창이동">
+                    <a href="https://www.facebook.com/hangang.rising.star" target="_blank" title="새창이동">
                         <img src="/front_img/facebook.png" alt="">
                     </a>
                 </li>
                 <li>
-                    <a href="" target="_blank" title="새창이동">
+                    <a href="https://www.instagram.com/hangang_rising_star/" target="_blank" title="새창이동">
                         <img src="/front_img/insta.png" alt="">
                     </a>
                 </li>
                 <li>
-                    <a href="" target="_blank" title="새창이동">
+                    <a href="https://www.youtube.com/@hangang-rising-star" target="_blank" title="새창이동">
                         <img src="/front_img/youtube.png" alt="">
                     </a>
                 </li>

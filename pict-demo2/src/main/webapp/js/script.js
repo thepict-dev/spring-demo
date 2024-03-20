@@ -33,29 +33,6 @@ $(window).on('scroll', function(){
 //	}
 //});
 
-//비디오 모달
-const modal = document.querySelector(".videoModal");
-
-//모달창 버튼을 클릭하면 모달을 나타나게 한다.
-const btnModal = document.querySelector(".video");
-btnModal.addEventListener("click", e =>{
-    modal.style.display = "flex";
-});
-
-//모달창의 x를 누르면 모달창이 사라진다.
-// const closeBtn = modal.querySelector(".close-area");
-// closeBtn.addEventListener("click", evt => {
-//     modal.style.display = "none";
-// });
-
-//모달창의 바깥 영역을 클릭하면 꺼지게 한다.
-modal.addEventListener("click", e=>{
-    const evTarget = e.target;
-    if(evTarget.classList.contains("videoModal")){
-        modal.style.display="none";
-    }
-});
-    
 //스와이퍼
 const swiper1 = new Swiper('.swiper-container', {
     autoplay: {
@@ -78,4 +55,42 @@ const swiper1 = new Swiper('.swiper-container', {
             slidesPerView: 4.7,  //브라우저가 1024보다 클 때
         },
     }
+});
+
+//서브 스크롤
+var ovf, slider;
+console.log("123123123123")
+$(function(){
+    ovf = this.querySelector(".subContents");
+    slider = this.querySelector(".subTop");
+    winResize();
+    $(window).bind({resize: winResize, scroll: winScroll});
+});
+
+function winResize(){   
+    ovf.style.top = slider.offsetHeight + 100 + "px";
+}
+
+function winScroll(){
+    var op = 1 - (window.pageYOffset / slider.offsetHeight);
+    slider.style.opacity = op; 
+}
+
+// 탭
+const tabItem = document.querySelectorAll('.tabNav li');
+const tabInner = document.querySelectorAll('.tabInner');
+
+tabItem.forEach((tab, idx)=> {
+    tab.addEventListener('click', function(){
+        tabInner.forEach((inner)=> {
+            inner.classList.remove('active')
+        });
+
+        tabItem.forEach((item)=> {
+            item.classList.remove('active')
+        });
+
+        tabItem[idx].classList.add('active')
+        tabInner[idx].classList.add('active')
+    });
 });

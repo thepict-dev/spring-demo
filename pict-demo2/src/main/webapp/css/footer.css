@@ -1,15 +1,17 @@
 footer{
     width: 100%;
-    max-width: 1920px;
     height: 237px;
-    margin: 0 auto;
     padding: 0 100px;
+    background-color: #000;
 }
 .footerInner{
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    max-width: 1920px;
+    height: 100%;
+    margin: 0 auto;
 }
 .fInfo > p{
     color: var(--green-500);

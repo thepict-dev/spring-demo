@@ -65,7 +65,6 @@ main{
 .thumb{
     position: fixed;
     z-index: 5;
-    transform: translateX(0px);
 }
 .thumb1{
     left: 0;
@@ -333,11 +332,11 @@ main{
     align-items: center;
     margin-bottom: 38px;
 }
-.swiper-wrapper{
-	height: 260px !important;
-}
 .swiper-container:not(:last-of-type){
     margin-bottom: 30px;
+}
+.swiper-wrapper{
+    height: 260px !important;
 }
 .swiper-slide{
     height: 260px !important;

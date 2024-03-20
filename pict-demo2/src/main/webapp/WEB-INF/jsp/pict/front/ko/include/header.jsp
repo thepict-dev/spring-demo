@@ -10,10 +10,10 @@
             <a href="/front/ko/main.do"><img src="/front_img/logo.png" alt="로고"></a>
         </h1>
         <ul class="nav">
-            <li class="<c:if test="${main ne -1}">active</c:if>">
+            <li class="active">
                 <a href="/front/ko/main.do">홈</a>
             </li>
-            <li class="<c:if test="${intro ne -1}">active</c:if>">
+            <li>
                 <a href="">라이징스타 소개</a>
             </li>
             <li>
