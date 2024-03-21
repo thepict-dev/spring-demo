@@ -25,7 +25,7 @@
                 <li>언론보도</li>
             </ul>
             <div class="tabInner active" data-aos="fade-up" data-aos-delay="800">
-                <ul class="bdLists">
+                <ul class="bdLists boardL">
                 	<c:forEach var="board_list" items="${board_list}" varStatus="status">
 	                    <li>
 	                        <a href="/front/ko/board_view.do?idx=${board_list.idx}">
@@ -58,7 +58,7 @@
                     </c:forEach>
                 </ul>
                 <!-- 10개 단위로 노출 -->
-                <div class="moreButton bd">
+                <div class="moreButton bd news">
                     <button>+ 더보기</button>
                 </div>
             </div>

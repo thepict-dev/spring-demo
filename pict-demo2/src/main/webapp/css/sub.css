@@ -176,7 +176,9 @@
 }
 .videoList ul li{
     width: 100%;
-
+}
+.videoList ul li:nth-of-type(n + 13){
+    display: none;
 }
 .videoList ul li a{
     display: flex;
@@ -291,10 +293,18 @@
 .bdLists{
     width: 100%;
 }
-.bdLists li{
+.bdLists.boardL li{
     width: 100%;
     padding: 12px 114px;
     border-bottom: 1px solid var(--purple-400);
+}
+.bdLists.news li{
+    width: 100%;
+    padding: 12px 114px;
+    border-bottom: 1px solid var(--purple-400);
+}
+.bdLists li:nth-of-type(n + 11){
+    display: none;
 }
 .bdLists li a{
     display: grid;
