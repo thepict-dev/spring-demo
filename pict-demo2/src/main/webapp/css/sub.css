@@ -238,6 +238,7 @@
     color: #FFF;
     font-size: 14px;
     font-weight: 500;
+    font-family: var(--fn-suit);
     line-height: 100%; /* 14px */
     letter-spacing: -0.7px;
     cursor: pointer;
@@ -262,7 +263,7 @@
     margin: 0 auto;
     border-bottom: 1px solid #FFF;
 }
-.tabNav > li{
+.tabNav > a{
     display: flex;
     width: 287px;
     height: 80px;
@@ -275,11 +276,11 @@
     color: rgba(255, 255, 255, 0.5);
     transition: all .3s;
 }
-.tabNav li.active {
+.tabNav a.active {
     border-bottom: 5px solid #fff;
     color:#fff;
 }
-.tabNav > li:hover{
+.tabNav > a:hover{
     color: #fff;
 }
 .tabInner{

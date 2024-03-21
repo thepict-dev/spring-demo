@@ -75,25 +75,6 @@ function winScroll(){
     slider.style.opacity = op; 
 }
 
-// 탭
-const tabItem = document.querySelectorAll('.tabNav li');
-const tabInner = document.querySelectorAll('.tabInner');
-
-tabItem.forEach((tab, idx)=> {
-    tab.addEventListener('click', function(){
-        tabInner.forEach((inner)=> {
-            inner.classList.remove('active')
-        });
-
-        tabItem.forEach((item)=> {
-            item.classList.remove('active')
-        });
-
-        tabItem[idx].classList.add('active')
-        tabInner[idx].classList.add('active')
-    });
-});
-
 // 컨텐츠 로드(더보기)
 $(function(){
     $(".videoList ul li").slice(0, 12).css('display', 'block'); // 초기갯수

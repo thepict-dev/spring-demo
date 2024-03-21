@@ -187,12 +187,19 @@ public class PictController {
 			throws Exception {
 
 		List<?> board_list = pictService.board_list(pictVO);
-		List<?> news_list = pictService.news_list(pictVO);
-		
 		model.addAttribute("board_list", board_list);
-		model.addAttribute("news_list", news_list);
 		model.addAttribute("pictVO", pictVO);
 		return "pict/front/ko/board_list";
+	}
+	// 뉴스 리스트  
+	@RequestMapping(value = "/front/ko/news_list.do")
+	public String news_list_f(@ModelAttribute("pictVO") PictVO pictVO, ModelMap model, HttpServletRequest request)
+			throws Exception {
+
+		List<?> news_list = pictService.news_list(pictVO);
+		model.addAttribute("news_list", news_list);
+		model.addAttribute("pictVO", pictVO);
+		return "pict/front/ko/news_list";
 	}
 	// 공지사항   
 	@RequestMapping(value = "/front/ko/board_view.do")

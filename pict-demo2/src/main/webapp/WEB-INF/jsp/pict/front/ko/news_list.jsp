@@ -21,25 +21,25 @@
     <div class="subContents">
         <div class="subContInner bdInner">
             <div class="tabNav" data-aos="fade-up" data-aos-delay="500">
-                <a href="/front/ko/board_list.do" class="active">공지사항</a>
-                <a href="/front/ko/news_list.do">언론보도</a>
+                <a href="/front/ko/board_list.do">공지사항</a>
+                <a href="/front/ko/news_list.do" class="active">언론보도</a>
             </div>
             <div class="tabInner active" data-aos="fade-up" data-aos-delay="800">
-                <ul class="bdLists boardL">
-                	<c:forEach var="board_list" items="${board_list}" varStatus="status">
+                <ul class="bdLists news">
+                	<c:forEach var="news_list" items="${news_list}" varStatus="status">
 	                    <li>
-	                        <a href="/front/ko/board_view.do?idx=${board_list.idx}">
-	                            <div class="idxTit">
-	                                <span>${status.count}</span>
-	                                <p>${board_list.title}</p>
+	                        <a href="${news_list.linkurl}" target="_blank" title="새창이동">
+	                            <p>${news_list.title}</p>
+	                            <div class="newsInfo">
+	                                <span>${news_list.newstitle}</span>
+	                                <p>${news_list.regdate}</p>
 	                            </div>
-	                            <p>${board_list.regdate}</p>
 	                        </a>
 	                    </li>
                     </c:forEach>
                 </ul>
                 <!-- 10개 단위로 노출 -->
-                <div class="moreButton bd">
+                <div class="moreButton bd news">
                     <button>+ 더보기</button>
                 </div>
             </div>

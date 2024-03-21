@@ -48,7 +48,7 @@
     <div class="centerSec">
     	<c:forEach var="resultList" items="${resultList}" varStatus="status" begin="0" end="0">
 	        <a class="video" data-aos="fade-up" data-aos-delay="500" href="#lnk" onclick="clickev('${resultList.videourl}')">
-	            <img src="/front_img/video.png" alt="">
+	            <img src="http://www.hangangrisingstar.co.kr${resultList.imgurl}" alt="">
 	            <div class="videoHover">
 	                <p>${resultList.title}</p>
 	                <span>${resultList.team}</span>
