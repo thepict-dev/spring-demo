@@ -50,10 +50,10 @@
             <h3 data-aos="fade-up" data-aos-delay="500">오늘의 하이라이트</h3>
             <div class="video" data-aos="fade-up" data-aos-delay="800">
             	<c:forEach var="resultList" items="${resultList}" varStatus="status" begin="0" end="0">
-	                <img src="/front_img/video.png" alt="">
+	                <img src="http://www.hangangrisingstar.co.kr${resultList.imgurl}" alt="">
 	                <div class="videoHover">
 	                    <p>${resultList.title}</p>
-	                    <span>${resultList.team }</span>
+	                    <span>${resultList.team}</span>
 	                </div>
                 </c:forEach>
             </div>
@@ -63,7 +63,7 @@
                 	<c:forEach var="resultList" items="${resultList}" varStatus="status">
 	                    <li>
 	                        <a href="" target="_blank" title="새창이동">
-	                            <div class="vidImg"><img src="/front_img/video.png" alt=""></div>
+	                            <div class="vidImg"><img src="http://www.hangangrisingstar.co.kr${resultList.imgurl}" alt=""></div>
 	                            <span>${resultList.category}</span>
 	                            <h4>${resultList.title}</h4>
 	                            <p>${resultList.team }</p>

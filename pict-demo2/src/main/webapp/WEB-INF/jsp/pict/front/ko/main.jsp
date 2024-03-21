@@ -105,13 +105,14 @@
 	                <div class="swiper-container" data-aos="fade-up" data-aos-delay="800" data-aos-anchor="#high">
 	                    <div class="swiper-wrapper">
 	                        <div class="swiper-slide">
-	                            <a href="">
+	                            <a href="#lnk" onclick="clickev('${resultList.videourl}')">
 	                                <img src="/front_img/video.png" alt="">
 	                            </a>
 	                        </div>
 	                    </div>
 	                </div>
                 </c:forEach>
+ 
                 
             </div>
         </div>
@@ -119,4 +120,3 @@
 </main>
 <%@ include file="./include/footer.jsp" %>
 
-<%@ include file="../video_modal.jsp" %>
