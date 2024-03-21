@@ -178,10 +178,6 @@
     width: 100%;
 
 }
-.videoList ul li{
-    width: 100%;
-
-}
 .videoList ul li a{
     display: flex;
     flex-direction: column;

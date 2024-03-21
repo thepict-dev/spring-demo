@@ -93,3 +93,27 @@ tabItem.forEach((tab, idx)=> {
         tabInner[idx].classList.add('active')
     });
 });
+
+// 컨텐츠 로드(더보기)
+$(function(){
+    $(".videoList ul li").slice(0, 12).css('display', 'block'); // 초기갯수
+    $(".moreButton button").click(function(e){ // 클릭시 more
+        // e.preventDefault();
+        $(".videoList ul li:hidden").slice(0, 12).css('display', 'block'); // 클릭시 more 갯수 지저정
+        if($(".videoList ul li:hidden").length === 0){ // 컨텐츠 남아있는지 확인
+            $(".moreButton button").hide() // 컨텐츠 없을시 버튼 없앰
+        }
+    });
+});
+
+// 컨텐츠 로드(더보기)
+$(function(){
+    $(".bdLists li").slice(0, 10).css('display', 'block'); // 초기갯수
+    $(".moreButton.bd button").click(function(e){ // 클릭시 more
+        // e.preventDefault();
+        $(".bdLists li:hidden").slice(0, 10).css('display', 'block'); // 클릭시 more 갯수 지저정
+        if($(".bdLists li:hidden").length === 0){ // 컨텐츠 남아있는지 확인
+            $(".moreButton.bd button").hide() // 컨텐츠 없을시 버튼 없앰
+        }
+    });
+});

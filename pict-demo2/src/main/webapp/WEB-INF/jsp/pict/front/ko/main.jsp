@@ -13,7 +13,7 @@
         <div class="mainTitle">
             <img src="/front_img/c-logo.png" alt="센터 로고">
         </div>
-        <a href="">
+        <a href="https://forms.gle/YbLi55nQuLb1pkuQ9" target="_blank" title="새창이동">
             <svg xmlns="http://www.w3.org/2000/svg" width="266" height="92" viewBox="0 0 266 92" fill="none">
                 <mask id="path-1-outside-1_7_78004" maskUnits="userSpaceOnUse" x="0.0930176" y="0" width="266" height="92" fill="black">
                     <rect fill="white" x="0.0930176" width="266" height="92"/>
@@ -101,17 +101,40 @@
                 <span>참가자 영상 하이라이트</span>
             </h2>
             <div class="highSlides" id="high">
-            	<c:forEach var="resultList" items="${resultList}" varStatus="status">
-	                <div class="swiper-container" data-aos="fade-up" data-aos-delay="800" data-aos-anchor="#high">
-	                    <div class="swiper-wrapper">
+            <div class="highSlides" id="high">
+                <div class="swiper-container" data-aos="fade-up" data-aos-delay="800" data-aos-anchor="#high">
+                    <div class="swiper-wrapper">
+           				<c:forEach var="resultList" items="${resultList}" varStatus="status">
 	                        <div class="swiper-slide">
-	                            <a href="#lnk" onclick='clickev("${resultList.videourl}")'>
+	                            <a href="#lnk" onclick="clickev('${resultList.videourl}')">
 	                                <img src="/front_img/video.png" alt="">
 	                            </a>
 	                        </div>
-	                    </div>
-	                </div>
-                </c:forEach>
+               			</c:forEach>
+                    </div>
+                </div>
+                <div class="swiper-container" data-aos="fade-up" data-aos-delay="900" data-aos-anchor="#high">
+                    <div class="swiper-wrapper">
+           				<c:forEach var="resultList" items="${resultList}" varStatus="status">
+	                        <div class="swiper-slide">
+	                            <a href="#lnk" onclick="clickev('${resultList.videourl}')">
+	                                <img src="/front_img/video.png" alt="">
+	                            </a>
+	                        </div>
+               			</c:forEach>
+                    </div>
+                </div>
+                <div class="swiper-container" data-aos="fade-up" data-aos-delay="1000" data-aos-anchor="#high">
+                    <div class="swiper-wrapper">
+           				<c:forEach var="resultList" items="${resultList}" varStatus="status">
+	                        <div class="swiper-slide">
+	                            <a href="#lnk" onclick="clickev('${resultList.videourl}')">
+	                                <img src="/front_img/video.png" alt="">
+	                            </a>
+	                        </div>
+               			</c:forEach>
+                    </div>
+                </div>
  
                 
             </div>
