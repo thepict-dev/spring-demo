@@ -101,33 +101,18 @@
                 <span>참가자 영상 하이라이트</span>
             </h2>
             <div class="highSlides" id="high">
-                <div class="swiper-container" data-aos="fade-up" data-aos-delay="800" data-aos-anchor="#high">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <a href="">
-                                <img src="/front_img/video.png" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-container" dir="rtl" data-aos="fade-up" data-aos-delay="900" data-aos-anchor="#high">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <a href="">
-                                <img src="/front_img/video.png" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-container" data-aos="fade-up" data-aos-delay="1000" data-aos-anchor="#high">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <a href="">
-                                <img src="/front_img/video.png" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
+            	<c:forEach var="resultList" items="${resultList}" varStatus="status">
+	                <div class="swiper-container" data-aos="fade-up" data-aos-delay="800" data-aos-anchor="#high">
+	                    <div class="swiper-wrapper">
+	                        <div class="swiper-slide">
+	                            <a href="">
+	                                <img src="/front_img/video.png" alt="">
+	                            </a>
+	                        </div>
+	                    </div>
+	                </div>
+                </c:forEach>
+                
             </div>
         </div>
     </div>

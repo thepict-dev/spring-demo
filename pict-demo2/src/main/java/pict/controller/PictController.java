@@ -153,7 +153,13 @@ public class PictController {
 	@RequestMapping(value = "/front/ko/main.do")
 	public String main(@ModelAttribute("pictVO") PictVO pictVO, ModelMap model, HttpServletRequest request)
 			throws Exception {
-
+		
+		pictVO.setType("main");
+		List<?> reference_list = pictService.video_list(pictVO);
+		model.addAttribute("resultList", reference_list);
+		model.addAttribute("size", reference_list.size());
+		model.addAttribute("pictVO", pictVO);
+		
 		return "pict/front/ko/main";
 	}
 	// 소개 
@@ -167,7 +173,12 @@ public class PictController {
 	@RequestMapping(value = "/front/ko/highlight.do")
 	public String highlight(@ModelAttribute("pictVO") PictVO pictVO, ModelMap model, HttpServletRequest request)
 			throws Exception {
-
+		pictVO.setType("main");
+		List<?> reference_list = pictService.video_list(pictVO);
+		
+		model.addAttribute("resultList", reference_list);
+		model.addAttribute("size", reference_list.size());
+		model.addAttribute("pictVO", pictVO);
 		return "pict/front/ko/highlight";
 	}
 	// 공지사항 리스트  
@@ -175,6 +186,12 @@ public class PictController {
 	public String front_board(@ModelAttribute("pictVO") PictVO pictVO, ModelMap model, HttpServletRequest request)
 			throws Exception {
 
+		List<?> board_list = pictService.board_list(pictVO);
+		List<?> news_list = pictService.news_list(pictVO);
+		
+		model.addAttribute("board_list", board_list);
+		model.addAttribute("news_list", news_list);
+		model.addAttribute("pictVO", pictVO);
 		return "pict/front/ko/board_list";
 	}
 	// 공지사항   
@@ -182,10 +199,14 @@ public class PictController {
 	public String board_view(@ModelAttribute("pictVO") PictVO pictVO, ModelMap model, HttpServletRequest request)
 			throws Exception {
 
+		pictVO = pictService.board_list_one(pictVO);
+		
+		model.addAttribute("pictVO", pictVO);
 		return "pict/front/ko/board_view";
 	}
 	
 
+	// 관리자
 	// 공지사항
 	@RequestMapping(value = "/board/board_list.do")
 	public String reference_list(@ModelAttribute("pictVO") PictVO pictVO, ModelMap model, HttpServletRequest request)

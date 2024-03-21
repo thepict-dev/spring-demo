@@ -7,7 +7,7 @@
 <footer>
     <div class="footerInner">
         <div class="fLogo">
-            <a href=""><img src="/front_img/logo.png" alt=""></a>
+            <a href="/"><img src="/front_img/logo.png" alt=""></a>
         </div>
         <div class="fInfo">
             <p>2024 한강 라이징스타</p>

@@ -49,23 +49,27 @@
         <div class="subContInner highInner">
             <h3 data-aos="fade-up" data-aos-delay="500">오늘의 하이라이트</h3>
             <div class="video" data-aos="fade-up" data-aos-delay="800">
-                <img src="/front_img/video.png" alt="">
-                <div class="videoHover">
-                    <p>영상 제목이 이곳에 들어갑니다</p>
-                    <span>참가자 이름이 이곳에 들어갑니다</span>
-                </div>
+            	<c:forEach var="resultList" items="${resultList}" varStatus="status" begin="0" end="0">
+	                <img src="/front_img/video.png" alt="">
+	                <div class="videoHover">
+	                    <p>${resultList.title}</p>
+	                    <span>${resultList.team }</span>
+	                </div>
+                </c:forEach>
             </div>
             <div class="videoList">
                 <h3 data-aos="fade-up" data-aos-delay="500">참가자 영상 모아보기</h3>
                 <ul data-aos="fade-up" data-aos-delay="800">
-                    <li>
-                        <a href="" target="_blank" title="새창이동">
-                            <div class="vidImg"><img src="/front_img/video.png" alt=""></div>
-                            <span>가창</span>
-                            <h4>제목 제목제목제 목제목 제목제목제목제목제 목제목</h4>
-                            <p>참가자 이름이 이곳에 들어갑니다</p>
-                        </a>
-                    </li>
+                	<c:forEach var="resultList" items="${resultList}" varStatus="status">
+	                    <li>
+	                        <a href="" target="_blank" title="새창이동">
+	                            <div class="vidImg"><img src="/front_img/video.png" alt=""></div>
+	                            <span>${resultList.category}</span>
+	                            <h4>${resultList.title}</h4>
+	                            <p>${resultList.team }</p>
+	                        </a>
+	                    </li>
+                    </c:forEach>
                 </ul>
                 <!-- 12개 단위로 노출 -->
                 <div class="moreButton">

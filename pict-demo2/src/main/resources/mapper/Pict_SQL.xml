@@ -11,7 +11,7 @@
 	
 	<!-- 공지사항 -->
 	<select id="board_list" resultType="pictVO">
-		select *
+		select idx, title, text, file1, file2, date_format(regdate, '%Y-%m-%d') as regdate
 		from board_table
 		<if test="search_text != null and search_text != '' ">
 			where (
@@ -21,7 +21,9 @@
 	</select>
 	
 	<select id="board_list_one" resultType="pictVO">
-		select * from board_table
+		select
+		idx, title, text, file1, file2, date_format(regdate, '%Y-%m-%d') as regdate 
+		from board_table
 		where idx = #{idx}
 	</select>
 	
@@ -53,7 +55,7 @@
 	
 	<!-- 보도자료 -->
 	<select id="news_list" resultType="pict.service.PictVO">
-		select *
+		select idx, title, newstitle, linkurl, date_format(regdate, '%Y-%m-%d') as regdate
 		from news_table
 		<if test="search_text != null and search_text != '' ">
 			where (
@@ -63,7 +65,8 @@
 	</select>
 	
 	<select id="news_list_one" resultType="pictVO">
-		select * from news_table
+		select idx, title, newstitle, linkurl, date_format(regdate, '%Y-%m-%d') as regdate 
+		from news_table
 		where idx = #{idx}
 	</select>
 	
@@ -93,10 +96,14 @@
 	
 		select *
 		from video_table
+		where 1=1
 		<if test="search_text != null and search_text != '' ">
-			where (
+			and (
 				title LIKE CONCAT('%', #{search_text}, '%')
 			) 
+		</if>
+		<if test="type != null and type != '' ">
+			order by rand()
 		</if>
 	</select>
 	
