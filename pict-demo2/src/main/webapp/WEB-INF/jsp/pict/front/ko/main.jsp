@@ -106,14 +106,14 @@
                 <p>2024 한강 라이징스타</p>
                 <span>참가자 영상 하이라이트</span>
             </h2>
-            <div class="highSlides" id="high">
+
             <div class="highSlides" id="high">
                 <div class="swiper-container" data-aos="fade-up" data-aos-delay="800" data-aos-anchor="#high">
                     <div class="swiper-wrapper">
-           				<c:forEach var="resultList" items="${resultList}" varStatus="status">
+           				<c:forEach var="resultList" items="${resultList}" varStatus="status" begin="0" end="4">
 	                        <div class="swiper-slide">
 	                            <a href="#lnk" onclick="clickev('${resultList.videourl}')">
-	                                <img src="/front_img/video.png" alt="">
+	                                <img src="http://www.hangangrisingstar.co.kr${resultList.imgurl}" alt="">
 	                            </a>
 	                        </div>
                			</c:forEach>
@@ -121,10 +121,10 @@
                 </div>
                 <div class="swiper-container" data-aos="fade-up" data-aos-delay="900" data-aos-anchor="#high">
                     <div class="swiper-wrapper">
-           				<c:forEach var="resultList" items="${resultList}" varStatus="status">
+           				<c:forEach var="resultList" items="${resultList}" varStatus="status" begin="5" end="9">
 	                        <div class="swiper-slide">
 	                            <a href="#lnk" onclick="clickev('${resultList.videourl}')">
-	                                <img src="/front_img/video.png" alt="">
+	                                <img src="http://www.hangangrisingstar.co.kr${resultList.imgurl}" alt="">
 	                            </a>
 	                        </div>
                			</c:forEach>
@@ -132,10 +132,10 @@
                 </div>
                 <div class="swiper-container" data-aos="fade-up" data-aos-delay="1000" data-aos-anchor="#high">
                     <div class="swiper-wrapper">
-           				<c:forEach var="resultList" items="${resultList}" varStatus="status">
+           				<c:forEach var="resultList" items="${resultList}" varStatus="status" begin="10" end="14">
 	                        <div class="swiper-slide">
 	                            <a href="#lnk" onclick="clickev('${resultList.videourl}')">
-	                                <img src="/front_img/video.png" alt="">
+	                                <img src="http://www.hangangrisingstar.co.kr${resultList.imgurl}" alt="">
 	                            </a>
 	                        </div>
                			</c:forEach>
