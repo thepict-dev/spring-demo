@@ -8,6 +8,10 @@
 <%@ include file="./include/header.jsp" %>
 
 
+
+
+
+
 <main>
     <div class="topSec">
         <div class="mainTitle">
@@ -42,13 +46,15 @@
         <div class="thumb thumb4"><img src="/front_img/thumb4.png" alt=""></div>
     </div>
     <div class="centerSec">
-        <div class="video" data-aos="fade-up" data-aos-delay="500">
-            <img src="/front_img/video.png" alt="">
-            <div class="videoHover">
-                <p>영상 제목이 이곳에 들어갑니다</p>
-                <span>참가자 이름이 이곳에 들어갑니다</span>
-            </div>
-        </div>
+    	<c:forEach var="resultList" items="${resultList}" varStatus="status" begin="0" end="0">
+	        <a class="video" data-aos="fade-up" data-aos-delay="500" href="#lnk" onclick="clickev('${resultList.videourl}')">
+	            <img src="/front_img/video.png" alt="">
+	            <div class="videoHover">
+	                <p>${resultList.title}</p>
+	                <span>${resultList.team}</span>
+	            </div>
+	        </a>
+        </c:forEach>
         <div class="videoBack"></div>
         <div class="intro">
             <h2 class="subTitles" data-aos="fade-up" data-aos-delay="500">
@@ -143,25 +149,19 @@
     <div class="videoModal">
 	    <div class="iframeContainer">
 	        <button></button>
-	        <iframe id="modals" width="560" height="315" src="https://www.youtube.com/embed/WvUxI5fbAlY?si=5cG0fDCNWgkZAYkB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+	        <iframe id="modals" width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 	    </div>
 	</div>
 	    
 </main>
 <%@ include file="./include/footer.jsp" %>
-
 <script>
 	function clickev(videourl){
 		//비디오 모달
 		const modal = document.querySelector(".videoModal");
-		console.log(videourl)
+		
 		document.getElementById("modals").src = videourl;
-
-		//모달창 버튼을 클릭하면 모달을 나타나게 한다.
-		const btnModal = document.querySelector(".video");
-		btnModal.addEventListener("click", e =>{
-		  modal.style.display = "flex";
-		});
+		$('.videoModal').css("display", "flex")
 		
 		//모달창의 x를 누르면 모달창이 사라진다.
 		//const closeBtn = modal.querySelector(".close-area");
@@ -173,13 +173,11 @@
 		modal.addEventListener("click", e=>{
 		  const evTarget = e.target;
 		  if(evTarget.classList.contains("videoModal")){
-		      modal.style.display="none";
+			  $('.videoModal').css("display", "none")
 		  }
 		});
 	}
 </script>
-
-
 
 
 

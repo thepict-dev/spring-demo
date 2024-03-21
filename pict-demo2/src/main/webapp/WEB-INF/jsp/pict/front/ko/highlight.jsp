@@ -48,15 +48,15 @@
     <div class="subContents">
         <div class="subContInner highInner">
             <h3 data-aos="fade-up" data-aos-delay="500">오늘의 하이라이트</h3>
-            <div class="video" data-aos="fade-up" data-aos-delay="800">
-            	<c:forEach var="resultList" items="${resultList}" varStatus="status" begin="0" end="0">
+            <c:forEach var="resultList" items="${resultList}" varStatus="status" begin="0" end="0">
+            	<a class="video" data-aos="fade-up" data-aos-delay="800" href="#lnk" onclick="clickev('${resultList.videourl}')">
 	                <img src="http://www.hangangrisingstar.co.kr${resultList.imgurl}" alt="">
 	                <div class="videoHover">
 	                    <p>${resultList.title}</p>
 	                    <span>${resultList.team}</span>
 	                </div>
-                </c:forEach>
-            </div>
+            	</a>
+           	</c:forEach>
             <div class="videoList">
                 <h3 data-aos="fade-up" data-aos-delay="500">참가자 영상 모아보기</h3>
                 <ul data-aos="fade-up" data-aos-delay="800">
@@ -87,20 +87,14 @@
     </div>
 </div>
     
-<%@ include file="../video_modal.jsp" %>
-
 <script>
 	function clickev(videourl){
 		//비디오 모달
 		const modal = document.querySelector(".videoModal");
 		console.log(videourl)
 		document.getElementById("modals").src = videourl;
+		$('.videoModal').css("display", "flex")
 
-		//모달창 버튼을 클릭하면 모달을 나타나게 한다.
-		const btnModal = document.querySelector(".video");
-		btnModal.addEventListener("click", e =>{
-		  modal.style.display = "flex";
-		});
 		
 		//모달창의 x를 누르면 모달창이 사라진다.
 		//const closeBtn = modal.querySelector(".close-area");
@@ -112,7 +106,7 @@
 		modal.addEventListener("click", e=>{
 		  const evTarget = e.target;
 		  if(evTarget.classList.contains("videoModal")){
-		      modal.style.display="none";
+			  $('.videoModal').css("display", "none")
 		  }
 		});
 	}
