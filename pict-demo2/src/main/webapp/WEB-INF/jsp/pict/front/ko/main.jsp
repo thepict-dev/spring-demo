@@ -105,7 +105,7 @@
 	                <div class="swiper-container" data-aos="fade-up" data-aos-delay="800" data-aos-anchor="#high">
 	                    <div class="swiper-wrapper">
 	                        <div class="swiper-slide">
-	                            <a href="#lnk" onclick="clickev('${resultList.videourl}')">
+	                            <a href="#lnk" onclick='clickev("${resultList.videourl}")'>
 	                                <img src="/front_img/video.png" alt="">
 	                            </a>
 	                        </div>
@@ -117,6 +117,46 @@
             </div>
         </div>
     </div>
+    <div class="videoModal">
+	    <div class="iframeContainer">
+	        <button></button>
+	        <iframe id="modals" width="560" height="315" src="https://www.youtube.com/embed/WvUxI5fbAlY?si=5cG0fDCNWgkZAYkB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+	    </div>
+	</div>
+	    
 </main>
 <%@ include file="./include/footer.jsp" %>
+
+<script>
+	function clickev(videourl){
+		//비디오 모달
+		const modal = document.querySelector(".videoModal");
+		console.log(videourl)
+		document.getElementById("modals").src = videourl;
+
+		//모달창 버튼을 클릭하면 모달을 나타나게 한다.
+		const btnModal = document.querySelector(".video");
+		btnModal.addEventListener("click", e =>{
+		  modal.style.display = "flex";
+		});
+		
+		//모달창의 x를 누르면 모달창이 사라진다.
+		//const closeBtn = modal.querySelector(".close-area");
+		//closeBtn.addEventListener("click", evt => {
+		//   modal.style.display = "none";
+		//});
+		
+		//모달창의 바깥 영역을 클릭하면 꺼지게 한다.
+		modal.addEventListener("click", e=>{
+		  const evTarget = e.target;
+		  if(evTarget.classList.contains("videoModal")){
+		      modal.style.display="none";
+		  }
+		});
+	}
+</script>
+
+
+
+
 

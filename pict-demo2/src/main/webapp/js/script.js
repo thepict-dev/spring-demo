@@ -59,7 +59,6 @@ const swiper1 = new Swiper('.swiper-container', {
 
 //서브 스크롤
 var ovf, slider;
-console.log("123123123123")
 $(function(){
     ovf = this.querySelector(".subContents");
     slider = this.querySelector(".subTop");
