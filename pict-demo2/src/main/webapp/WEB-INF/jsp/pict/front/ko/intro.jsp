@@ -84,10 +84,56 @@
             </div>
             <h3 class="titlePd" data-aos="fade-up" data-aos-delay="500">2024 한강 라이징스타 일정</h3>
             <div class="introSchedule" data-aos="fade-up" data-aos-delay="800">
-                <img src="/front_img/schedule.png" alt="">
+                    <div class="times">
+                        <div class="timesInner">
+                            <p class="timeDate">3월 22일(금) ~ 4월 30일(일)</p>
+                            <p class="timeTitle">참가신청</p>
+                            <p class="timeText">신청서 작성 및 제출</p>
+                            <p class="timeCap">*영상물 첨부</p>
+                        </div>
+                    </div>
+                    <div class="times">
+                        <div class="timesInner">
+                            <p class="timeDate">4월 22일(월) ~ 5월 7일(금)</p>
+                            <p class="timeTitle">선발 및 통보</p>
+                            <p class="timeText">5배수 선발 본선 진출자 총 30팀 선발</p>
+                            <p class="timeCap"></p>
+                        </div>
+                    </div>
+                    <div class="times time3">
+                        <div class="time3top">
+                            <div class="timesInner">
+                                <p class="timeDate">5월 19일(일)</p>
+                                <p class="timeTitle">본선위크 1회차</p>
+                                <p class="timeText">본선 진출자 15팀</p>
+                                <p class="timeCap">5팀 결선 진출</p>
+                            </div>
+                            <div class="timesInner">
+                                <p class="timeDate">5월 26일(일)</p>
+                                <p class="timeTitle">본선위크 2회차</p>
+                                <p class="timeText">본선 진출자 15팀</p>
+                                <p class="timeCap">5팀 결선 진출</p>
+                            </div>
+                        </div>
+                        <div class="time3bottom">
+                            <div class="timesInner">
+                                <p class="timeTitle">▷▷▷ HANGANG PASS 2팀 추가 선발 ▷▷▷</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="times">
+                        <div class="timesInner">
+                            <p class="timeDate">6월 2일(일)</p>
+                            <p class="timeTitle">결선위크</p>
+                            <p class="timeText">총 12팀 진출자 중 3팀 시상</p>
+                            <p class="timeCap"></p>
+                        </div>
+                    </div>
+                </div>
+                <p class="scheCap">※ 상기 일정은 운영 상황에 따라 변동될 수 있습니다</p>
             </div>
-        </div>
 		<%@ include file="./include/footer.jsp" %>
+        </div>
     </div>
 </div>
 <script>
