@@ -46,15 +46,9 @@
         <div class="thumb thumb4"><img src="/front_img/thumb4.png" alt=""></div>
     </div>
     <div class="centerSec">
-    	<c:forEach var="resultList" items="${resultList}" varStatus="status" begin="0" end="0">
-	        <a class="video" data-aos="fade-up" data-aos-delay="500" href="#lnk" onclick="clickev('${resultList.videourl}')">
-	            <img src="http://www.hangangrisingstar.co.kr${resultList.imgurl}" alt="">
-	            <div class="videoHover">
-	                <p>${resultList.title}</p>
-	                <span>${resultList.team}</span>
-	            </div>
-	        </a>
-        </c:forEach>
+        <a class="video" data-aos="fade-up" data-aos-delay="500" href="#lnk">
+        	<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/929250315?h=807a5982cc&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="v0.9_SPOT영상_2024 한강 라이징 스타_(주)더픽트_20240331"></iframe></div>
+        </a>
         <div class="videoBack"></div>
         <div class="intro">
             <h2 class="subTitles" data-aos="fade-up" data-aos-delay="500">
@@ -149,7 +143,7 @@
     <div class="videoModal">
 	    <div class="iframeContainer">
 	        <button></button>
-	        <iframe id="modals" width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+	        <iframe id="modals" width="560" height="315" src="https://vimeo.com/929250315/807a5982cc?share=copy" title="video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 	    </div>
 	</div>
 	    
@@ -178,6 +172,7 @@
 		});
 	}
 </script>
+<script src="https://player.vimeo.com/api/player.js"></script>
 
 
 
