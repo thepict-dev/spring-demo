@@ -25,16 +25,16 @@
         </h1>
         <ul class="nav">
             <li <c:if test="${main ne -1}">class="active"</c:if> >
-                <a href="/front/ko/main.do">홈</a>
+                <a href="/front/ko/main">홈</a>
             </li>
             <li <c:if test="${intro ne -1}">class="active"</c:if> >
-                <a href="/front/ko/intro.do">라이징 스타 소개</a>
+                <a href="/front/ko/intro">라이징 스타 소개</a>
             </li>
             <li <c:if test="${highlight ne -1}">class="active"</c:if> >
-                <a href="/front/ko/highlight.do">참가자 구경하러 가기</a>
+                <a href="/front/ko/highlight">참가자 구경하러 가기</a>
             </li>
             <li <c:if test="${board ne -1}">class="active"</c:if> >
-                <a href="/front/ko/board_list.do">소식보기</a>
+                <a href="/front/ko/board_list">소식보기</a>
             </li>
         </ul>
     </div>
