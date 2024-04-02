@@ -10,7 +10,7 @@
             <a href="/"><img src="/front_img/logo.png" alt=""></a>
         </div>
         <div class="fInfo">
-            <p>2024 한강 라이징스타</p>
+            <p>2024 한강 라이징 스타</p>
             <ul class="sns">
                 <li>
                     <a href="https://www.facebook.com/hangang.rising.star" target="_blank" title="새창이동">
@@ -30,7 +30,8 @@
             </ul>
             <div class="tel">
                 <span>문의</span>
-                <p>1644-4845</p>
+                <!-- <p>1644-4845</p> -->
+                <a href="http://pf.kakao.com/_HDvWG" target="_blank" title="새창이동">카카오톡 고객센터</a>
             </div>
         </div>
     </div>

@@ -59,23 +59,23 @@
         <div class="intro">
             <h2 class="subTitles" data-aos="fade-up" data-aos-delay="500">
                 <p>원하는 누구나 스타가 되는 경험</p>
-                <span>2024 한강 라이징스타에서 가능합니다</span>
+                <span>2024 한강 라이징 스타에서 가능합니다</span>
             </h2>
             <ul class="introContent" id="intro">
                 <li data-aos="fade-up" data-aos-delay="800" data-aos-anchor="#intro">
                     <div class="topText">
-                        <p>노래</p>
+                        <p>음악</p>
                         <span>부문</span>
                     </div>
-                    <p>가슴 한 켠에 숨겨뒀던 노래 실력,<br>이제 세상 밖으로 꺼내보이세요 !</p>
+                    <p>음악 부문 노래 실력부터 악기 연주까지<br>당신의 음악 재능을 보여주세요!</p>
                     <img src="/front_img/sing.png" alt="">
                 </li>
                 <li data-aos="fade-up" data-aos-delay="900">
                     <div class="topText">
-                        <p>무용</p>
+                        <p>춤</p>
                         <span>부문</span>
                     </div>
-                    <p>K-POP 커버부터 막춤까지 가능한<br>무대로 당신을 초대합니다 !</p>
+                    <p>춤 부문K-POP 커버부터 막춤까지<br>다양한 댄스를 구사하는 당신을 기다립니다!</p>
                     <img src="/front_img/dance.png" alt="">
                 </li>
                 <li data-aos="fade-up" data-aos-delay="1000">
@@ -96,14 +96,14 @@
             </h2>
             <div class="ambContents">
                 <img src="/front_img/amb-img.png" alt="" class="centerImg" data-aos="fade-up" data-aos-delay="800">
-                <img src="/front_img/amb-text.png" alt="" class="ambText" data-aos="zoom-in-up" data-aos-delay="1000">
-                <img src="/front_img/sh-text.png" alt="" class="shText" data-aos="zoom-in-up" data-aos-delay="1200">
+                <img src="/front_img/amb-text.png" alt="" class="ambText" data-aos="zoom-in-up" data-aos-delay="850">
+                <img src="/front_img/sh-text.png" alt="" class="shText" data-aos="zoom-in-up" data-aos-delay="950">
                 <div class="ambBack"></div>
             </div>
         </div>
         <div class="highlight">
             <h2 class="subTitles highTitles" data-aos="fade-up" data-aos-delay="500">
-                <p>2024 한강 라이징스타</p>
+                <p>2024 한강 라이징 스타</p>
                 <span>참가자 영상 하이라이트</span>
             </h2>
 

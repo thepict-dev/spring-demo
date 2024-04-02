@@ -12,13 +12,13 @@
         <div class="subTopInner">
             <div class="subTopTitles">
                 <h2>
-                    <p>2024 한강 라이징스타</p>
+                    <p>2024 한강 라이징 스타</p>
                     <span>를 소개합니다</span>
                 </h2>
                 <p>
                     노래, 댄스, 연기, 스포츠, 무술까지<br>
                     다양한 분야에서 특별한 재능이 있다면<br>
-                    모두 2024 한강 라이징스타를 주목하세요
+                    모두 2024 한강 라이징 스타를 주목하세요
                 </p>
                 <a href="https://forms.gle/YbLi55nQuLb1pkuQ9" target="_blank" title="새창이동">
                     <svg xmlns="http://www.w3.org/2000/svg" width="266" height="92" viewBox="0 0 266 92" fill="none">
@@ -48,27 +48,28 @@
     </div>
     <div class="subContents">
         <div class="subContInner">
-            <h3 data-aos="fade-up" data-aos-delay="500">2024 한강 라이징스타 개요</h3>
+            <h3 data-aos="fade-up" data-aos-delay="500">2024 한강 라이징 스타 개요</h3>
             <div class="introSec" data-aos="fade-up" data-aos-delay="800">
                 <span><img src="/front_img/poster.png" alt=""></span>
                 <ul class="introTexts">
                     <li>
                         <span>모집 일정</span>
-                        <p>2024년 3월 22일(금)~4월 30일(일)/40일간</p>
+                        <p>2024년 3월 29일(금) ~ 4월 30일(화) / 33일간</p>
                     </li>
                     <li>
                         <span>모집 방법</span>
                         <p>상단 ‘접수하러가기’ 버튼 클릭</p>
                     </li>
-                    <li>
-                        <span>모집 내용</span>
-                        <p>노래, 댄스, 연기, 스포츠, 무술 등 다양한 분야에서 특별한 재능이 있는 시민</p>
-                    </li>
-                    <li>
+                    <li class="top">
                         <span>지원 자격</span>
-                        <p>본선&결선 현장 참석이 가능한 남녀노소 연령 및 국적 관계없이 누구나</p>
+                        <p>
+                            남녀노소, 연령 및 국적 관계없이 한강을 사랑하는 자 누구나<br>
+                            본선과 결선 등 관련 행사 및 무대 참석이 모두 가능한 자<br>
+                            ’2024 한강 라이징 스타’ 결격 사유에 해당하지 않는 자<br>
+                            (*결격사유는 모집 요강 확인)
+                        </p>
                     </li>
-                    <li>
+                    <li class="top">
                         <span class="top">참가 부문</span>
                         <p>
                             가창(가요, 국악 등)<br>
@@ -76,17 +77,20 @@
                             퍼포먼스(마술, 마샬아츠 등 가창, 무용을 제외한 기타)
                         </p>
                     </li>
-                    <li>
-                        <span>시상 혜택</span>
-                        <p>1위 시상자에게 서울 한강 앰버서더 위촉 *향후 서울시 공식 행사 참여</p>
+                    <li class="top">
+                        <span class="top">시상 내용</span>
+                        <p>
+                            최종 무대 1~3위 수상자 한강 앰버서더 위촉<br>
+                            1년간 서울특별시 공식 행사 초청 및 한강 홍보 활동
+                        </p>
                     </li>
                 </ul>
             </div>
-            <h3 class="titlePd" data-aos="fade-up" data-aos-delay="500">2024 한강 라이징스타 일정</h3>
+            <h3 class="titlePd" data-aos="fade-up" data-aos-delay="500">2024 한강 라이징 스타 일정</h3>
             <div class="introSchedule" data-aos="fade-up" data-aos-delay="800">
                     <div class="times">
                         <div class="timesInner">
-                            <p class="timeDate">3월 22일(금) ~ 4월 30일(일)</p>
+                            <p class="timeDate">3월 29일 (금) ~ 4월 30일 (화)</p>
                             <p class="timeTitle">참가신청</p>
                             <p class="timeText">신청서 작성 및 제출</p>
                             <p class="timeCap">*영상물 첨부</p>
@@ -94,7 +98,7 @@
                     </div>
                     <div class="times">
                         <div class="timesInner">
-                            <p class="timeDate">4월 22일(월) ~ 5월 7일(금)</p>
+                            <p class="timeDate">4월 22일 (월) ~ 5월 7일 (화)</p>
                             <p class="timeTitle">선발 및 통보</p>
                             <p class="timeText">5배수 선발 본선 진출자 총 30팀 선발</p>
                             <p class="timeCap"></p>

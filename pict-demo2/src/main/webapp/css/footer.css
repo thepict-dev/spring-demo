@@ -53,3 +53,9 @@ footer{
     line-height: 100%; /* 40px */
     letter-spacing: -2px;
 }
+.tel a{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 100%; /* 40px */
+    letter-spacing: -2px;
+}

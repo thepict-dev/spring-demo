@@ -123,7 +123,10 @@
     align-items: center;
     column-gap: 14px;
 }
-.introTexts li span{
+.introTexts li.top{
+    align-items: flex-start;
+}
+.introTexts li > span{
     display: block;
     padding: 8px;
     font-size: 16px;
@@ -132,8 +135,8 @@
     letter-spacing: -0.8px;
     white-space: nowrap;
 }
-.introTexts li span.top{
-    padding-bottom: 67px;
+.introTexts li.top span{
+    padding-top: 13px;
 }
 .introTexts li p{
     padding: 8px;
@@ -141,6 +144,20 @@
     font-weight: 400;
     line-height: 160%; /* 28.8px */
     letter-spacing: -0.9px;
+}
+.introTexts li.subDesc{
+    flex-direction: column;
+    align-items: flex-start;
+}
+.introTexts li.subDesc p{
+    padding: 0 0 0 13px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%; /* 28.8px */
+}
+.introTexts li.subDesc p span{
+    display: block;
+    padding-left: 15px;
 }
 .subContInner h3.titlePd{
     padding-top: 100px;
