@@ -83,13 +83,13 @@
 	<script>
 		function news_delete() {
 			if (confirm("삭제 하시겠습니까?")) {
-				$("#register").attr("action", "/news/news_delete.do");
+				$("#register").attr("action", "/news/news_delete");
 				$("#register").submit();
 			}
 			
 		}
 		function news_list() {
-			location.href = "/news/news_list.do";
+			location.href = "/news/news_list";
 		}
 		function button1_click() {
 			var title = $('#title').val();
@@ -106,7 +106,7 @@
 			}
 
 			if (confirm(text)) {
-				$("#register").attr("action", "/news/news_save.do");
+				$("#register").attr("action", "/news/news_save");
 				$("#register").submit();
 			}
 		}

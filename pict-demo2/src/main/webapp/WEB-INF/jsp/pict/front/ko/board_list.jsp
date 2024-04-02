@@ -12,7 +12,7 @@
         <div class="subTopInner">
             <div class="subTopTitles">
                 <h2>
-                    <p>2024 한강 라이징스타</p>
+                    <p>2024 한강 라이징 스타</p>
                     <span>의 소식을 알려드려요</span>
                 </h2>
             </div>
@@ -21,14 +21,14 @@
     <div class="subContents">
         <div class="subContInner bdInner">
             <div class="tabNav" data-aos="fade-up" data-aos-delay="500">
-                <a href="/front/ko/board_list.do" class="active">공지사항</a>
-                <a href="/front/ko/news_list.do">언론보도</a>
+                <a href="/front/ko/board_list" class="active">공지사항</a>
+                <a href="/front/ko/news_list">언론보도</a>
             </div>
             <div class="tabInner active" data-aos="fade-up" data-aos-delay="800">
                 <ul class="bdLists boardL">
                 	<c:forEach var="board_list" items="${board_list}" varStatus="status">
 	                    <li>
-	                        <a href="/front/ko/board_view.do?idx=${board_list.idx}">
+	                        <a href="/front/ko/board_view?idx=${board_list.idx}">
 	                            <div class="idxTit">
 	                                <span>${status.count}</span>
 	                                <p>${board_list.title}</p>

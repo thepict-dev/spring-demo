@@ -41,13 +41,13 @@ public class PictController {
 
 
 	
-	@RequestMapping("/pict_main.do")
+	@RequestMapping("/pict_main")
 	public String pict_main(@ModelAttribute("pictVO") AdminVO adminVO, HttpServletRequest request, ModelMap model,
 			HttpSession session, RedirectAttributes rttr) throws Exception {
 		String sessions = (String) request.getSession().getAttribute("id");
 		System.out.println(sessions);
 		if (sessions == null || sessions == "null") {
-			return "redirect:/pict_login.do";
+			return "redirect:/pict_login";
 		} else {
 			String user_id = (String) request.getSession().getAttribute("id");
 			if (request.getSession().getAttribute("id") != null) {
@@ -56,12 +56,12 @@ public class PictController {
 				model.addAttribute("adminVO", adminVO);
 			}
 
-			return "redirect:/board/board_list.do";
+			return "redirect:/board/board_list";
 
 		}
 	}
 
-	@RequestMapping("/pict_login.do")
+	@RequestMapping("/pict_login")
 	public String login_main(@ModelAttribute("pictVO") AdminVO adminVO, HttpServletRequest request, ModelMap model,
 			HttpServletResponse response) throws Exception {
 		String userAgent = request.getHeader("user-agent");
@@ -81,13 +81,13 @@ public class PictController {
 			return "pict/main/login";
 		} else {
 			// 나중에 여기 계정별로 리다이렉트 분기처리
-			return "redirect:/board/board_list.do";
+			return "redirect:/board/board_list";
 
 		}
 
 	}
 
-	@RequestMapping("/login.do")
+	@RequestMapping("/login")
 	public String login(@ModelAttribute("adminVO") AdminVO adminVO, HttpServletRequest request, ModelMap model)
 			throws Exception {
 		// 처음 드러와서 세션에 정보있으면 메인으로 보내줘야함
@@ -116,29 +116,29 @@ public class PictController {
 				adminVO.setAdminId(user_id);
 				adminVO = adminService.get_user_info(adminVO);
 
-				return "redirect:/pict_main.do";
+				return "redirect:/pict_main";
 
 			} else {
 				model.addAttribute("message", "입력하신 정보가 일치하지 않습니다.");
 				model.addAttribute("retType", ":location");
-				model.addAttribute("retUrl", "/pict_login.do");
+				model.addAttribute("retUrl", "/pict_login");
 				return "pict/main/message";
 			}
 		} else {
 			model.addAttribute("message", "입력하신 정보가 일치하지 않습니다.");
 			model.addAttribute("retType", ":location");
-			model.addAttribute("retUrl", "/pict_login.do");
+			model.addAttribute("retUrl", "/pict_login");
 			return "pict/main/message";
 		}
 	}
 
-	@RequestMapping("/logout.do")
+	@RequestMapping("/logout")
 	public String logout(@ModelAttribute("pictVO") PictVO pictVO, HttpServletRequest request, ModelMap model)
 			throws Exception {
 		request.getSession().setAttribute("id", null);
 		request.getSession().setAttribute("name", null);
 
-		return "redirect:/pict_login.do";
+		return "redirect:/pict_login";
 
 	}
 

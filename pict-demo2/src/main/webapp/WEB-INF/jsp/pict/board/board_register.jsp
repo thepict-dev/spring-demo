@@ -95,13 +95,13 @@
 	<script>
 		function board_delete() {
 			if (confirm("삭제 하시겠습니까?")) {
-				$("#register").attr("action", "/board/board_delete.do");
+				$("#register").attr("action", "/board/board_delete");
 				$("#register").submit();
 			}
 			
 		}
 		function board_list() {
-			location.href = "/board/board_list.do";
+			location.href = "/board/board_list";
 		}
 		function button1_click() {
 			var title = $('#title').val();
@@ -119,7 +119,7 @@
 			}
 
 			if (confirm(text)) {
-				$("#register").attr("action", "/board/board_save.do");
+				$("#register").attr("action", "/board/board_save");
 				$("#register").submit();
 			}
 		}

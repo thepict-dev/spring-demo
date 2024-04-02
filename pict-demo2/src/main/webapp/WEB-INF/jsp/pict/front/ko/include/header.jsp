@@ -28,7 +28,7 @@
                 <a href="/front/ko/main.do">홈</a>
             </li>
             <li <c:if test="${intro ne -1}">class="active"</c:if> >
-                <a href="/front/ko/intro.do">라이징스타 소개</a>
+                <a href="/front/ko/intro.do">라이징 스타 소개</a>
             </li>
             <li <c:if test="${highlight ne -1}">class="active"</c:if> >
                 <a href="/front/ko/highlight.do">참가자 구경하러 가기</a>

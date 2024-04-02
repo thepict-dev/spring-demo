@@ -100,13 +100,13 @@
 	<script>
 		function video_delete() {
 			if (confirm("삭제 하시겠습니까?")) {
-				$("#register").attr("action", "/video/video_delete.do");
+				$("#register").attr("action", "/video/video_delete");
 				$("#register").submit();
 			}
 			
 		}
 		function video_list() {
-			location.href = "/video/video_list.do";
+			location.href = "/video/video_list";
 		}
 		function button1_click() {
 			var title = $('#title').val();
@@ -123,7 +123,7 @@
 			}
 
 			if (confirm(text)) {
-				$("#register").attr("action", "/video/video_save.do");
+				$("#register").attr("action", "/video/video_save");
 				$("#register").submit();
 			}
 		}

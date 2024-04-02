@@ -77,21 +77,21 @@
 		<script>
 
 			function video_mod(idx){
-				location.href= "/video/video_register.do?idx="+ idx;
+				location.href= "/video/video_register?idx="+ idx;
 			}
 			function video_list(){
-				location.href= "/video/video_list.do";
+				location.href= "/video/video_list";
 			}
 			function video_delete(idx) {
 				if (confirm("삭제 하시겠습니까?")) {
 					$('#idx').val(idx)
-					$("#register").attr("action", "/video/video_delete.do");
+					$("#register").attr("action", "/video/video_delete");
 					$("#register").submit();
 				}
 			}
 			
 			function search(){
-				$("#search_fm").attr("action", "/video/video_list.do");
+				$("#search_fm").attr("action", "/video/video_list");
 				$("#search_fm").submit();
 			}
 		</script>

@@ -7,7 +7,7 @@
 
 <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
     <h1 class="header-logo">
-    	<a class="navbar-brand ps-3" href="/pict_main.do">
+    	<a class="navbar-brand ps-3" href="/pict_main">
     		<img src="/front_img/logo.png" alt="라이징스타" style="position:relative; left:10px; width:75%">
    		</a>
 	</h1>
@@ -25,11 +25,11 @@
 <script>
 	function fn_logout() {
 		if(confirm("로그아웃 하시겠습니까?")){
-			location.href="/logout.do"
+			location.href="/logout"
 		}
 	}
 	function fn_user() {
-		location.href="/user_register.do"
+		location.href="/user_register"
 	}
 </script>
 <script src="../../../../../js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>

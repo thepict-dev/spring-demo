@@ -77,21 +77,21 @@
 		<script>
 
 			function news_mod(idx){
-				location.href= "/news/news_register.do?idx="+ idx;
+				location.href= "/news/news_register?idx="+ idx;
 			}
 			function news_list(){
-				location.href= "/news/news_list.do";
+				location.href= "/news/news_list";
 			}
 			function news_delete(idx) {
 				if (confirm("삭제 하시겠습니까?")) {
 					$('#idx').val(idx)
-					$("#register").attr("action", "/news/news_delete.do");
+					$("#register").attr("action", "/news/news_delete");
 					$("#register").submit();
 				}
 			}
 			
 			function search(){
-				$("#search_fm").attr("action", "/news/news_list.do");
+				$("#search_fm").attr("action", "/news/news_list");
 				$("#search_fm").submit();
 			}
 		</script>

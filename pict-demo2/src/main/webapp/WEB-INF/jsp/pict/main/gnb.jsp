@@ -31,12 +31,12 @@
             </a>
             <div class="collapse <c:if test="${board_register ne -1}">show</c:if>" id="collapseLayouts1" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                 <nav class="sb-sidenav-menu-nested nav">
-                    <a class="nav-link <c:if test="${board_register ne -1}">active</c:if>" href="/board/board_register.do">게시물 등록</a>
+                    <a class="nav-link <c:if test="${board_register ne -1}">active</c:if>" href="/board/board_register">게시물 등록</a>
                 </nav>
             </div>
             <div class="collapse <c:if test="${board_list ne -1}">show</c:if>" id="collapseLayouts1" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                 <nav class="sb-sidenav-menu-nested nav">
-                    <a class="nav-link <c:if test="${board_list ne -1}">active</c:if>" href="/board/board_list.do">게시물 리스트</a>
+                    <a class="nav-link <c:if test="${board_list ne -1}">active</c:if>" href="/board/board_list">게시물 리스트</a>
                 </nav>
             </div>
             
@@ -45,12 +45,12 @@
             </a>
             <div class="collapse <c:if test="${news_register ne -1}">show</c:if>" id="collapseLayouts2" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                 <nav class="sb-sidenav-menu-nested nav">
-                    <a class="nav-link <c:if test="${news_register ne -1}">active</c:if>" href="/news/news_register.do">보도자료 등록</a>
+                    <a class="nav-link <c:if test="${news_register ne -1}">active</c:if>" href="/news/news_register">보도자료 등록</a>
                 </nav>
             </div>
             <div class="collapse <c:if test="${news_list ne -1}">show</c:if>" id="collapseLayouts2" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                 <nav class="sb-sidenav-menu-nested nav">
-                    <a class="nav-link <c:if test="${news_list ne -1}">active</c:if>" href="/news/news_list.do">보도자료 리스트</a>
+                    <a class="nav-link <c:if test="${news_list ne -1}">active</c:if>" href="/news/news_list">보도자료 리스트</a>
                 </nav>
             </div>
 
@@ -59,12 +59,12 @@
             </a>
             <div class="collapse <c:if test="${video_register ne -1}">show</c:if>" id="collapseLayouts3" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                 <nav class="sb-sidenav-menu-nested nav">
-                    <a class="nav-link <c:if test="${video_register ne -1}">active</c:if>" href="/video/video_register.do">참가영상 등록</a>
+                    <a class="nav-link <c:if test="${video_register ne -1}">active</c:if>" href="/video/video_register">참가영상 등록</a>
                 </nav>
             </div>
             <div class="collapse <c:if test="${video_list ne -1}">show</c:if>" id="collapseLayouts3" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                 <nav class="sb-sidenav-menu-nested nav">
-                    <a class="nav-link <c:if test="${video_list ne -1}">active</c:if>" href="/video/video_list.do">참가영상 리스트</a>
+                    <a class="nav-link <c:if test="${video_list ne -1}">active</c:if>" href="/video/video_list">참가영상 리스트</a>
                 </nav>
             </div>
            

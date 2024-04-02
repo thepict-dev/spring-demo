@@ -77,21 +77,21 @@
 		<script>
 
 			function board_mod(idx){
-				location.href= "/board/board_register.do?idx="+ idx;
+				location.href= "/board/board_register?idx="+ idx;
 			}
 			function board_list(){
-				location.href= "/board/board_list.do";
+				location.href= "/board/board_list";
 			}
 			function board_delete(idx) {
 				if (confirm("삭제 하시겠습니까?")) {
 					$('#idx').val(idx)
-					$("#register").attr("action", "/board/board_delete.do");
+					$("#register").attr("action", "/board/board_delete");
 					$("#register").submit();
 				}
 			}
 			
 			function search(){
-				$("#search_fm").attr("action", "/board/board_list.do");
+				$("#search_fm").attr("action", "/board/board_list");
 				$("#search_fm").submit();
 			}
 		</script>

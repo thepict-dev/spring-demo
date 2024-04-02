@@ -12,7 +12,7 @@
         <div class="subTopInner">
             <div class="subTopTitles">
                 <h2>
-                    <p>2024 한강 라이징스타</p>
+                    <p>2024 한강 라이징 스타</p>
                     <span>에 참여한 사람들</span>
                 </h2>
                 <p>
