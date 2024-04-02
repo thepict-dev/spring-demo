@@ -38,7 +38,7 @@ footer{
 .tel{
     display: flex;
     align-items: flex-end;
-    column-gap: 12px;
+    column-gap: 40px;
 }
 .tel span{
     padding-bottom: 5px;

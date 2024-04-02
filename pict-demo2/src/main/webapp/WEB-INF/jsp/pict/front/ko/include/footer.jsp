@@ -27,11 +27,17 @@
                         <img src="/front_img/youtube.png" alt="">
                     </a>
                 </li>
+                <li>
+                    <a href="http://pf.kakao.com/_HDvWG" target="_blank" title="새창이동">
+                        <img src="/front_img/kakao.png" alt="">
+                    </a>
+                </li>
+                
             </ul>
             <div class="tel">
                 <span>문의</span>
-                <!-- <p>1644-4845</p> -->
-                <a href="http://pf.kakao.com/_HDvWG" target="_blank" title="새창이동">카카오톡 고객센터</a>
+                <p>1661-4419</p>
+                <!-- <a href="http://pf.kakao.com/_HDvWG" target="_blank" title="새창이동">카카오톡 고객센터</a> -->
             </div>
         </div>
     </div>
