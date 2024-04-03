@@ -402,6 +402,9 @@
     margin: 0;
     padding: 100px 0 0 0;
 }
+.subContInner.highInner .video{
+    height: 804px;
+}
 .videoList{
     width: 100%;
     margin-top: 150px;
@@ -497,6 +500,9 @@
     .subContInner.highInner{
         padding: 24px 0 0 0;
     }
+	.subContInner.highInner .video{
+	    height: 400px;
+	}
     .videoList{
         margin-top: 24px;
         padding: 24px 0 150px 0;
@@ -530,6 +536,11 @@
     }
 }
 
+@media all and (max-width : 500px){
+	.subContInner.highInner .video{
+	    height: 200px;
+	}
+}
 
 .subContInner.bdInner{
     width: 100%;

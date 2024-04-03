@@ -53,7 +53,7 @@ header{
     .headerInner{
         justify-content: center;
         height: fit-content;
-        padding: 20px 0 0 16px;
+        padding: 20px 0 20px 16px;
     }
     .headerInner h1{
         display: none;
