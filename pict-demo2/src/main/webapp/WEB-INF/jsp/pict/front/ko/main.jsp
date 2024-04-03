@@ -82,7 +82,7 @@
                         <span>부문</span>
                     </div>
                     <p class="pcText">노래 실력부터 악기 연주까지<br>당신의 음악 재능을 보여주세요!</p>
-                    <p class="mbText">노래 실력부터 악기 연주<br>까지 당신의 음악 재능을<br>보여주세요!</p>
+                    <p class="mbText">노래 실력부터 악기 연주까지<br>당신의 음악 재능을<br>보여주세요!</p>
                     <img src="/front_img/sing.png" alt="">
                 </li>
                 <li data-aos="fade-up" data-aos-delay="900">
@@ -91,7 +91,7 @@
                         <span>부문</span>
                     </div>
                     <p class="pcText">K-POP 커버부터 막춤까지<br>다양한 댄스를 구사하는 당신을 기다립니다!</p>
-                    <p class="mbText">K-POP 커버부터 막춤까<br>지 다양한 댄스를 구사하<br>는 당신을 기다립니다!</p>
+                    <p class="mbText">K-POP 커버부터 막춤까지<br>다양한 댄스를 구사하는<br>당신을 기다립니다!</p>
                     <img src="/front_img/dance.png" alt="">
                 </li>
                 <li data-aos="fade-up" data-aos-delay="1000">
@@ -100,7 +100,7 @@
                         <span>부문</span>
                     </div>
                     <p class="pcText">퍼포먼스 대 환영!<br>창의적인 아이디어와 재능을 뽐내주세요</p>
-                    <p class="mbText">퍼포먼스 대 환<br>영! 창의적인 아이디어와<br>재능을 뽐내주세요</p>
+                    <p class="mbText">퍼포먼스 대 환영!<br>창의적인 아이디어와<br>재능을 뽐내주세요</p>
                     <img src="/front_img/perfo.png" alt="">
                 </li>
             </ul>

@@ -229,6 +229,7 @@
     font-weight: 400;
     line-height: 160%; /* 28.8px */
     letter-spacing: -0.9px;
+   	word-break: keep-all;
 }
 .introTexts li.subDesc{
     flex-direction: column;
@@ -292,6 +293,9 @@
 .time3bottom .timeTitle{
     padding: 15px;
     text-align : center;
+}
+.time3bottom .timeTitle.mb{
+	display: none;
 }
 .timeCap{
     padding-top: 8px;
@@ -377,6 +381,12 @@
         font-size: 24px;
         letter-spacing: -1.2px;
     }
+	.time3bottom .timeTitle.pc{
+		display: none;
+	}
+	.time3bottom .timeTitle.mb{
+		display: block;
+	}
     .timeCap{
         padding-top: 8px;
         font-size: 12px;

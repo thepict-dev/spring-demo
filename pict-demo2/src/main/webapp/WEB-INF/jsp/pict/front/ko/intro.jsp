@@ -141,7 +141,8 @@
                         </div>
                         <div class="time3bottom">
                             <div class="timesInner">
-                                <p class="timeTitle">▷▷▷ HANGANG PASS 2팀 추가 선발 ▷▷▷</p>
+                                <p class="timeTitle pc">▷▷▷ HANGANG PASS 2팀 추가 선발 ▷▷▷</p>
+                                <p class="timeTitle mb">HANGANG PASS 2팀 추가 선발</p>
                             </div>
                         </div>
                     </div>
