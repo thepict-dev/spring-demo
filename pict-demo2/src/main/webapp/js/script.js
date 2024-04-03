@@ -14,6 +14,12 @@ var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userA
 		});
 		//서브 스크롤
 		var ovf, slider;
+		
+		function winResize(){   
+		    ovf.style.top = slider.offsetHeight + 100 + "px";
+		}
+		
+		
 		$(function(){
 		    ovf = this.querySelector(".subContents");
 		    slider = this.querySelector(".subTop");
@@ -21,9 +27,7 @@ var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userA
 		    $(window).bind({resize: winResize, scroll: winScroll});
 		});
 		
-		function winResize(){   
-		    ovf.style.top = slider.offsetHeight + 100 + "px";
-		}
+		
 		
 		function winScroll(){
 		    var op = 1 - (window.pageYOffset / slider.offsetHeight);
@@ -39,6 +43,13 @@ var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userA
 		});
 		//서브 스크롤
 		var ovf, slider;
+		
+		
+		function winResize(){   
+		    ovf.style.top = slider.offsetHeight + 70 + "px";
+		}
+		
+		
 		$(function(){
 		    ovf = this.querySelector(".subContents");
 		    slider = this.querySelector(".subTop");
@@ -46,9 +57,6 @@ var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userA
 		    $(window).bind({resize: winResize, scroll: winScroll});
 		});
 		
-		function winResize(){   
-		    ovf.style.top = slider.offsetHeight + 70 + "px";
-		}
 		
 		function winScroll(){
 		    var op = 1 - (window.pageYOffset / slider.offsetHeight);

@@ -20,7 +20,7 @@
     <link href="../../../../../css/egovframework/pict/styles.css" rel="stylesheet" />
     <link href="../../../../../css/egovframework/pict/contents.css" rel="stylesheet" />
     <script src="../../../../../js/all.min.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" type="image/x-icon" href="/images/pict/favicon.webp">
+    
     <script src="https://kit.fontawesome.com/13fbf8e9ff.js" crossorigin="anonymous"></script>
     <script src="../../../../../js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 	<script src="../../../../../js/scripts.js"></script>
