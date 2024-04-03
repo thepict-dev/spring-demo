@@ -2,12 +2,59 @@ AOS.init();
 
 
 //스크롤 엄지 클래스
-$(window).on('scroll', function () {
-    if ($(window).scrollTop() < 845) {
-        $('.thumb').removeClass('off');
-    } else {
-        $('.thumb').addClass('off');
-    }
+$(document).ready(function () {       
+var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
+     if(!isMobile) {
+		$(window).on('scroll', function () {
+		    if ($(window).scrollTop() < 845) {
+		        $('.thumb').removeClass('off');
+		    } else {
+		        $('.thumb').addClass('off');
+		    }
+		});
+		//서브 스크롤
+		var ovf, slider;
+		$(function(){
+		    ovf = this.querySelector(".subContents");
+		    slider = this.querySelector(".subTop");
+		    winResize();
+		    $(window).bind({resize: winResize, scroll: winScroll});
+		});
+		
+		function winResize(){   
+		    ovf.style.top = slider.offsetHeight + 100 + "px";
+		}
+		
+		function winScroll(){
+		    var op = 1 - (window.pageYOffset / slider.offsetHeight);
+		    slider.style.opacity = op; 
+		}
+     } else {
+		$(window).on('scroll', function () {
+		    if ($(window).scrollTop() < 300) {
+		        $('.thumb').removeClass('off');
+		    } else {
+		        $('.thumb').addClass('off');
+		    }
+		});
+		//서브 스크롤
+		var ovf, slider;
+		$(function(){
+		    ovf = this.querySelector(".subContents");
+		    slider = this.querySelector(".subTop");
+		    winResize();
+		    $(window).bind({resize: winResize, scroll: winScroll});
+		});
+		
+		function winResize(){   
+		    ovf.style.top = slider.offsetHeight + 70 + "px";
+		}
+		
+		function winScroll(){
+		    var op = 1 - (window.pageYOffset / slider.offsetHeight);
+		    slider.style.opacity = op; 
+		}
+     }
 });
 
 //스크롤 엄지
@@ -57,23 +104,6 @@ const swiper1 = new Swiper('.swiper-container', {
     }
 });
 
-//서브 스크롤
-var ovf, slider;
-$(function(){
-    ovf = this.querySelector(".subContents");
-    slider = this.querySelector(".subTop");
-    winResize();
-    $(window).bind({resize: winResize, scroll: winScroll});
-});
-
-function winResize(){   
-    ovf.style.top = slider.offsetHeight + 100 + "px";
-}
-
-function winScroll(){
-    var op = 1 - (window.pageYOffset / slider.offsetHeight);
-    slider.style.opacity = op; 
-}
 
 // 컨텐츠 로드(더보기)
 $(function(){

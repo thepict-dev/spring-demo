@@ -44,3 +44,39 @@ header{
 .nav li.active a{
     color: var(--green-500);
 }
+
+@media all and (max-width : 1024px){
+    header{
+        height: fit-content;
+        overflow: hidden;
+    }
+    .headerInner{
+        justify-content: center;
+        height: fit-content;
+        padding: 20px 0 0 16px;
+    }
+    .headerInner h1{
+        display: none;
+    }
+    .nav{
+        width: 100%;
+        column-gap: 8px;
+        overflow-x: auto;
+        padding-right: 16px;
+    }
+    .nav li{
+        font-size: 14px;
+        letter-spacing: -0.7px;
+    }
+    .nav li a{
+        display: block;
+        padding: 8px 20px;
+        border-radius: 999px;
+        border: 1px solid #FFF;
+        white-space: nowrap;
+    }
+    .nav li.active a{
+        color: #000;
+        background-color: var(--green-500);
+    }
+}

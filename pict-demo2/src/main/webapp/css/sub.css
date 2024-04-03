@@ -9,8 +9,8 @@
     padding: 0 20px;
     background-image: url(/front_img/dot.png);
     background-repeat: no-repeat;
-    background-position: center 100%;
-    background-size: contain;
+    background-position: center -100%;
+    background-size: cover;
 }
 .subTopInner{
     width: 100%;
@@ -57,6 +57,9 @@
     width: 266px;
     transition: all .2s;
 }
+.subTopTitles a .mbSvg{
+    display: none;
+}
 .subTopTitles .fill{
     fill: var(--purple-500);
     transition: all .2s;
@@ -66,6 +69,69 @@
 }
 .subTopTitles a:hover{
     transform: rotate(7deg);
+}
+@media all and (max-width : 1400px){
+    .subTopImg{
+        position: absolute;
+        right: 50px;
+        bottom: 0;
+        z-index: -1;
+        max-width: 705px;
+        width: 50%;
+    }
+}
+@media all and (max-width : 1024px){
+    .subMain{
+        width: 100%;
+        margin-top: 80px;
+    }
+    .subTop{
+        height: 263px;
+        padding: 0 17px;
+    }
+    .subTopInner{
+        padding-top: 0;
+    }
+    .subTopTitles h2{
+		display: flex;
+	    flex-direction: column;
+	    align-items: flex-start;
+	    row-gap: 4px;
+        font-size: 20px;
+        letter-spacing: -1px;
+    }
+    .subTopTitles h2 p{
+        padding: 8px;
+        background: var(--green-500);
+        color: var(--purple-500);
+    }
+    .subTopTitles > p{
+        padding: 12px 0;
+        font-size: 16px;
+        letter-spacing: -0.8px;
+    }
+    .subTopImg{
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: unset;
+        z-index: -1;
+        max-width: 189px;
+    }
+    .subTopTitles a{
+        width: 135px;
+    }
+    .subTopTitles a .pcSvg{
+        display: none;
+    }
+    .subTopTitles a .mbSvg{
+        display: block;
+    }
+}
+@media all and (max-width : 486px){
+    .subTopImg{
+        width: 40%;
+    }
 }
 
 .subContents{
@@ -91,6 +157,25 @@
     line-height: 100%; /* 50px */
     letter-spacing: -2.5px;
 }
+
+@media all and (max-width : 1024px){
+    .subContents{
+        border-radius: 12px 12px 0px 0px;
+    }
+    .subContInner{
+        width: 100%;
+        max-width: 1760px;
+        margin: 0 auto;
+        padding: 24px 17px 150px 17px;
+    }
+    .subContInner h3{
+        padding-bottom: 20px;
+        font-size: 20px;
+        letter-spacing: -1px;
+        text-align: center;
+    }
+}
+
 .introSec{
     display: flex;
     align-items: center;
@@ -225,6 +310,90 @@
     letter-spacing: -0.6px;
 }
 
+@media all and (max-width : 1024px){
+    .introSec{
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 20px;
+    }
+    .introSec > span{
+        justify-content: center;
+        width: 100%;
+        max-width: unset;
+        padding: 8px 50px;
+    }
+    .introSec > span img{
+        width: 100%;
+        max-width: unset;
+    }
+    .introTexts{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .introTexts li{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .introTexts li.top span{
+        padding-top: 0;
+    }
+    .introTexts li.subDesc{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .subContInner h3.titlePd{
+        padding: 20px 0 40px 0;
+    }
+    .introSchedule{
+        display: flex;
+        flex-direction: column;
+        row-gap: 8px;
+        width: 100%;
+        height: auto;
+    }
+    .times{
+        height: 230px;
+    }
+    .time3top{
+        display: flex;
+        column-gap: 8px;
+        margin-bottom: 8px;
+        width: 100%;
+        height: 150px;
+    }
+    .time3bottom{
+        width: 100%;
+        height: calc(100% - 158px);
+    }
+    .timeDate, .timeText{
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 100%; /* 16px */
+        letter-spacing: -0.8px;
+    }
+    .timeTitle{
+        font-size: 24px;
+        letter-spacing: -1.2px;
+    }
+    .timeCap{
+        padding-top: 8px;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 100%; /* 12px */
+        letter-spacing: -0.6px;
+    }
+    .scheCap{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 19px;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 100%; /* 12px */
+        letter-spacing: -0.6px;
+    }
+}
 
 .subContInner.highInner{
     width: 100%;
@@ -323,6 +492,44 @@
 }
 
 
+@media all and (max-width : 1024px){
+    .subContInner.highInner{
+        padding: 24px 0 0 0;
+    }
+    .videoList{
+        margin-top: 24px;
+        padding: 24px 0 150px 0;
+    }
+    .videoList ul{
+        grid-template-columns: repeat(2, 49%);
+        column-gap: 12px;
+        row-gap: 20px;
+        padding: 0 17px;
+    }
+    .videoList ul li a .vidImg{
+        height: 125px;
+    }
+    .videoList ul li a span{
+        font-size: 12px;
+    }
+    .videoList ul li a h4{
+        padding: 8px 0 12px 0;
+        font-size: 16px;
+        line-height: 150%; /* 28.8px */
+        letter-spacing: -0.8px;
+        word-break: keep-all;
+    }
+    .videoList ul li a p{
+        font-size: 14px;
+        line-height: 150%; /* 28.8px */
+        letter-spacing: -0.7px;
+    }
+    .moreButton{
+        margin-top: 40px;
+    }
+}
+
+
 .subContInner.bdInner{
     width: 100%;
     max-width: 1470px;
@@ -406,11 +613,37 @@
     text-overflow: ellipsis;
     word-break: break-all;
 }
-.moreButton {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-top: 60px;
+@media all and (max-width : 1024px){
+    .subContInner.bdInner{
+        padding: 24px 17px 150px 17px;
+    }
+    .tabNav{
+        column-gap: 8px;
+    }
+    .tabNav > a{
+        width: 176px;
+        height: 40px;
+        letter-spacing: -1px;
+        font-size: 20px;
+    }
+    .tabInner{
+        padding-top: 44px;
+    }
+    .bdLists.boardL li{
+        padding: 12px 16px;
+    }
+    .bdLists.news li{
+        padding: 12px 16px;
+    }
+    .bdLists li:nth-of-type(n + 11){
+        display: none;
+    }
+    .bdLists li a{
+        grid-template-columns: 70% 30%;
+        font-size: 16px;
+        letter-spacing: -0.8px;
+        padding: 0 16px;
+    }
 }
 
 
@@ -439,11 +672,14 @@
 .newsInfo p{
     white-space: nowrap;
 }
-.moreButton {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-top: 60px;
+
+@media all and (max-width : 1024px){
+	.bdLists.news li a{
+        grid-template-columns: 70% 30%;
+        font-size: 16px;
+        letter-spacing: -0.8px;
+        padding: 0 16px;
+	}
 }
 
 .viewContainer{
@@ -510,4 +746,50 @@
     width: 100%;
     padding: 16px;
     border-bottom: 1px solid #FFF;
+}
+.viewContents img{
+    width: 90%;
+}
+
+@media all and (max-width : 1024px){
+    .viewContainer{
+        width: 100%;
+        max-width: 1470px;
+        margin: 0 auto;
+        padding: 0 16px;
+    }
+    .viewContainer > a{
+        font-size: 14px;
+        letter-spacing: -0.7px;
+    }
+    .viewContainer > a img{
+        width: 24px;
+    }
+    .viewTitle{
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 12px;
+        height: 67px;
+        margin-top: 16px;
+        padding: 8px;
+    }
+    .viewTitle p{
+        font-size: 18px;
+        letter-spacing: -0.9px;
+    }
+    .viewTitle span{
+        align-self: flex-end;
+        font-size: 14px;
+        letter-spacing: -0.7px;
+    }
+    .viewContents{
+        padding: 16px 0 200px 0;
+    }
+    .files a{
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 100%; /* 14px */
+        letter-spacing: -0.7px;
+    }
 }

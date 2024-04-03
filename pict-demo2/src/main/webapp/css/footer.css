@@ -59,3 +59,45 @@ footer{
     line-height: 100%; /* 40px */
     letter-spacing: -2px;
 }
+
+@media all and (max-width : 1024px){
+    footer{
+        height: fit-content;
+        padding: 24px 0;
+        background-color: #000;
+    }
+    .footerInner{
+        flex-direction: column;
+        justify-content: unset;
+        align-items: center;
+    }
+    .fInfo > p{
+        text-align: center;
+    }
+    .fLogo{
+        margin-bottom: 61px;
+    } 
+    .sns{
+        display: flex;
+        justify-content: center;
+        column-gap: 34px;
+        padding: 24px 0;
+    }
+    .tel{
+        justify-content: center;
+        column-gap: 12px;
+    }
+    .tel span{
+        padding-bottom: 1px;
+        font-size: 16px;
+        letter-spacing: -0.8px;
+    }
+    .tel p{
+        font-size: 20px;
+        letter-spacing: -1px;
+    }
+    .tel a{
+        font-size: 20px;
+        letter-spacing: -1px;
+    }
+}
