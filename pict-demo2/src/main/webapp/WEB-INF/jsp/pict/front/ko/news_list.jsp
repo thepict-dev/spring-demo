@@ -22,7 +22,7 @@
         <div class="subContInner bdInner">
             <div class="tabNav" data-aos="fade-up" data-aos-delay="500">
                 <a href="/front/ko/board_list">공지사항</a>
-                <a href="/front/ko/news_list" class="active">언론보도</a>
+                <a href="/front/ko/news_list" class="active">소식 모아보기</a>
             </div>
             <div class="tabInner active" data-aos="fade-up" data-aos-delay="800">
                 <ul class="bdLists news">
