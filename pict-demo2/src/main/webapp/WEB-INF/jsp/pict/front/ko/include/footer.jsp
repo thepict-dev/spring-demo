@@ -28,7 +28,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="http://pf.kakao.com/_HDvWG" target="_blank" title="새창이동">
+                    <a href="http://pf.kakao.com/_LxaGNG" target="_blank" title="새창이동">
                         <img src="/front_img/kakao.png" alt="">
                     </a>
                 </li>

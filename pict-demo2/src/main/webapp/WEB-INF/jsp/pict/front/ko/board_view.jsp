@@ -17,10 +17,10 @@
         <c:if test="${pictVO.file1 ne '' && pictVO.file1 ne undefined }">
 	        <div class="files">
 	        	<c:if test="${pictVO.file1 ne '' && pictVO.file1 ne undefined }">
-	            	<a href="http://www.hangangrisingstar.co.kr${pictVO.file1}" download=""><img src="/front_img/attach.png" alt="">${pictVO.file1}</a>
+	            	<a href="http://www.hangangrisingstar.co.kr${pictVO.file1}" download="" target="_blank"><img src="/front_img/attach.png" alt="">${fn:split(pictVO.file1,'/')[3]}</a>
             	</c:if>
             	<c:if test="${pictVO.file2 ne '' && pictVO.file2 ne undefined }">
-	            	<a href="http://www.hangangrisingstar.co.kr${pictVO.file2}" download=""><img src="/front_img/attach.png" alt="">${pictVO.file2}</a>
+	            	<a href="http://www.hangangrisingstar.co.kr${pictVO.file2}" download="" target="_blank"><img src="/front_img/attach.png" alt="">${fn:split(pictVO.file2,'/')[3]}</a>
 	            </c:if>
 	        </div>
         </c:if>
