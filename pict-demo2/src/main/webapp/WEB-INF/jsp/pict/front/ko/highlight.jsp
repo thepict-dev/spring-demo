@@ -63,7 +63,7 @@
                 </a>
             </div>
         </div>
-        <div class="subTopImg"><img src="/front_img/high.png" alt=""></div>
+        <div class="subTopImg highImg"><img src="/front_img/high.png" alt=""></div>
     </div>
     <div class="subContents">
         <div class="subContInner highInner">

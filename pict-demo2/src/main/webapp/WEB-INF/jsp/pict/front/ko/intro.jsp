@@ -120,7 +120,7 @@
                         <div class="timesInner">
                             <p class="timeDate">4월 22일 (월) ~ 5월 7일 (화)</p>
                             <p class="timeTitle">선발 및 통보</p>
-                            <p class="timeText">5배수 선발 본선 진출자 총 30팀 선발</p>
+                            <p class="timeText">본선 진출자 개별 연락</p>
                             <p class="timeCap"></p>
                         </div>
                     </div>
@@ -129,14 +129,14 @@
                             <div class="timesInner">
                                 <p class="timeDate">5월 19일(일)</p>
                                 <p class="timeTitle">본선위크 1회차</p>
-                                <p class="timeText">본선 진출자 15팀</p>
-                                <p class="timeCap">5팀 결선 진출</p>
+                                <p class="timeText">본선 진출자 15개팀</p>
+                                <p class="timeCap">참가 팀 중 5팀 결선 진출</p>
                             </div>
                             <div class="timesInner">
                                 <p class="timeDate">5월 26일(일)</p>
                                 <p class="timeTitle">본선위크 2회차</p>
-                                <p class="timeText">본선 진출자 15팀</p>
-                                <p class="timeCap">5팀 결선 진출</p>
+                                <p class="timeText">본선 진출자 15개팀</p>
+                                <p class="timeCap">참가 팀 중 5팀 결선 진출</p>
                             </div>
                         </div>
                         <div class="time3bottom">
@@ -150,7 +150,7 @@
                         <div class="timesInner">
                             <p class="timeDate">6월 2일(일)</p>
                             <p class="timeTitle">결선위크</p>
-                            <p class="timeText">총 12팀 진출자 중 3팀 시상</p>
+                            <p class="timeText">참가 팀 중 3개 팀 최종 시상</p>
                             <p class="timeCap"></p>
                         </div>
                     </div>

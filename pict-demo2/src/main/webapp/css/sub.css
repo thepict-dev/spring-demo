@@ -49,6 +49,9 @@
     /* max-width: 705px;
     width: 50%; */
 }
+.subTopImg.highImg{
+	max-width: 900px;
+}
 .subTopImg img{
     width: 100%;
 }
