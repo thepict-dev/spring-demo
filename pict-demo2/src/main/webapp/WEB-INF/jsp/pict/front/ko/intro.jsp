@@ -129,14 +129,14 @@
                             <div class="timesInner">
                                 <p class="timeDate">5월 19일(일)</p>
                                 <p class="timeTitle">본선위크 1회차</p>
-                                <p class="timeText">본선 진출자 15개팀</p>
-                                <p class="timeCap">참가 팀 중 5팀 결선 진출</p>
+                                <p class="timeText">본선 진출자 15개 팀</p>
+                                <p class="timeCap">참가 팀 중 5개 팀 결선 진출</p>
                             </div>
                             <div class="timesInner">
                                 <p class="timeDate">5월 26일(일)</p>
                                 <p class="timeTitle">본선위크 2회차</p>
-                                <p class="timeText">본선 진출자 15개팀</p>
-                                <p class="timeCap">참가 팀 중 5팀 결선 진출</p>
+                                <p class="timeText">본선 진출자 15개 팀</p>
+                                <p class="timeCap">참가 팀 중 5개 팀 결선 진출</p>
                             </div>
                         </div>
                         <div class="time3bottom">
