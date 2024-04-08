@@ -154,8 +154,8 @@
                         </div>
                         <div class="time3bottom eng">
                             <div class="timesInner">
-                                <p class="timeTitle pc">▷▷▷ HANGANG PASS 2  ▷▷▷<span>additional teams will be selected</span></p>
-                                <p class="timeTitle mb">HANGANG PASS 2<span>additional teams will be selected</span></p>
+                                <p class="timeTitle pc">▷▷▷ HANGANG PASS ▷▷▷<span>2 additional teams will be selected</span></p>
+                                <p class="timeTitle mb">HANGANG PASS<span>2 additional teams will be selected</span></p>
                             </div>
                         </div>
                     </div>
