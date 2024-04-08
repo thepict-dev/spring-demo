@@ -289,6 +289,9 @@ main{
     height: 66px;
     background-color: var(--green-500);
 }
+.subTitles.eng span::after{
+    height: 120px;
+}
 
 @media all and (max-width : 1024px){
     .centerSec{
@@ -329,6 +332,9 @@ main{
     .subTitles span::after{
         height: 36px;
     }
+	.subTitles.eng span::after{
+	    height: 57px;
+	}
 }
 
 .intro{
