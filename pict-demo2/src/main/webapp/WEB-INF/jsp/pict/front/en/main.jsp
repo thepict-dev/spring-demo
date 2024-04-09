@@ -121,7 +121,7 @@
         <div class="amb">
             <h2 class="subTitles ambTitles eng" data-aos="fade-up" data-aos-delay="500">
                 <p>A public contest program that looks solely<br>at talent, regardless of age,<br>gender, nationality, or genre.</p>
-                <span>The winner will become<br>a Seoul Hangang Ambassador</span>
+                <span>The winner will become<br>Seoul Hangang Ambassador</span>
             </h2>
             <div class="ambContents">
                 <img src="/front_img/amb-img.png" alt="" class="centerImg" data-aos="fade-up" data-aos-delay="800">
@@ -132,7 +132,7 @@
         </div>
         <div class="highlight">
             <h2 class="subTitles highTitles" data-aos="fade-up" data-aos-delay="500">
-                <p>Hangang Rising Star 2024</p>
+                <p>2024 Hangang Rising Star</p>
                 <span>Contestant Video Highlights</span>
             </h2>
 

@@ -12,7 +12,7 @@
         <div class="subTopInner">
             <div class="subTopTitles eng">
                 <h2>
-                    <span>Introducing the</span>
+                    <span>Introducing</span>
                     <p>2024 Hangang Rising Star</p>
                 </h2>
                 <p>
@@ -81,7 +81,7 @@
     </div>
     <div class="subContents">
         <div class="subContInner">
-            <h3 data-aos="fade-up" data-aos-delay="500">Overview of the<br>2024 Hangang Rising Star</h3>
+            <h3 data-aos="fade-up" data-aos-delay="500">Overview of<br>2024 Hangang Rising Star</h3>
             <div class="introSec" data-aos="fade-up" data-aos-delay="800">
                 <span><img src="/front_img/poster.png" alt=""></span>
                 <ul class="introTexts eng">
@@ -98,7 +98,7 @@
                         <p>
                             Anyone who loves the Han River, regardless of gender, age or nationality<br>
                             Those who can attend all related events and stages such as the main round and finals<br>
-                            Those who do not fall under the disqualification criteria for 'Hangang Rising Star 2024'<br>
+                            Those who do not fall under the disqualification criteria for '2024 Hangang Rising Star'<br>
                             (*Check the recruitment summary for disqualification criteria)
                         </p>
                     </li>
@@ -113,8 +113,8 @@
                     <li class="top">
                         <span class="top">Winning<br>benefits</span>
                         <p>
-                            Selected winners: 1-3 winners of the final stage will be appointed as Han River Ambassadors<br>
-                            If selected, you will be a Seoul Han River Ambassador for one year
+                            Selected winners: 1-3 winners of the final stage will be appointed as Hangang Ambassadors<br>
+                            If selected, you will be a Seoul Hangang Ambassador for one year
                         </p>
                     </li>
                 </ul>

@@ -12,7 +12,7 @@
         <div class="subTopInner">
             <div class="subTopTitles eng">
                 <h2>
-                    <span>Announcing the</span>
+                    <span>Announcing</span>
                     <p>2024 Hangang Rising Star</p>
                 </h2>
             </div>
