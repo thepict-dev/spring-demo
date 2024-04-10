@@ -119,7 +119,7 @@
                     </li>
                 </ul>
             </div>
-            <h3 class="titlePd" data-aos="fade-up" data-aos-delay="500">Hangang Rising Star 2024 Schedule</h3>
+            <h3 class="titlePd" data-aos="fade-up" data-aos-delay="500">2024 Hangang Rising Star Schedule</h3>
             <div class="introSchedule" data-aos="fade-up" data-aos-delay="800">
                     <div class="times">
                         <div class="timesInner">
