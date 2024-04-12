@@ -580,6 +580,9 @@ main{
     align-items: center;
     margin-bottom: 38px;
 }
+.swiper-wrapper{
+	height: fit-content !important; 
+}
 .swiper-container:not(:last-of-type){
     margin-bottom: 30px;
 }
