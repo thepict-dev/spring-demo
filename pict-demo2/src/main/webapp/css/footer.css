@@ -21,13 +21,22 @@ footer{
     letter-spacing: -0.8px;
 }
 .fLogo{
-    width: 215px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 20px;
 } 
 .fLogo a{
     display: block;
     width: 100%;
+    max-width: 215px;
 }
 .fLogo a img{
+    width: 100%;
+}
+.logos{
+	max-width: 350.5px;
+}
+.logos img{
     width: 100%;
 }
 .sns{
@@ -77,11 +86,40 @@ footer{
     .fLogo{
         margin-bottom: 61px;
     } 
+	.fLogo{
+		align-items: center;
+		row-gap: 10px;
+		padding: 0 17px;
+	} 
+	.fLogo a{
+	    display: block;
+	    width: 100%;
+	    max-width: 215px;
+	}
+	.fLogo a img{
+	    width: 100%;
+	}
+	.logos{
+		max-width: 350.5px;
+	}
+	.logos img{
+	    width: 100%;
+	}
     .sns{
         display: flex;
         justify-content: center;
-        column-gap: 34px;
-        padding: 24px 0;
+        column-gap: 20px;
+        padding: 24px 17px;
+    }
+    .sns li{
+    	max-width: 47px;
+    }
+    .sns li a{
+    	display: block;
+    	width: 100%;
+    }
+    .sns li a img{
+    	width: 100%;
     }
     .tel{
         justify-content: center;

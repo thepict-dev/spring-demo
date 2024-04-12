@@ -8,6 +8,7 @@
     <div class="footerInner">
         <div class="fLogo">
             <a href="/"><img src="/front_img/logo.png" alt=""></a>
+            <div class="logos"><img src="/front_img/logos.png" alt=""></div>
         </div>
         <div class="fInfo">
             <p>2024 한강 라이징 스타</p>
@@ -28,11 +29,15 @@
                     </a>
                 </li>
                 <li>
+                    <a href="https://tv.naver.com/hangangrisingstar" target="_blank" title="새창이동">
+                        <img src="/front_img/naver-tv.png" alt="">
+                    </a>
+                </li>
+                <li>
                     <a href="http://pf.kakao.com/_LxaGNG" target="_blank" title="새창이동">
                         <img src="/front_img/kakao.png" alt="">
                     </a>
                 </li>
-                
             </ul>
             <div class="tel">
                 <span>문의</span>
