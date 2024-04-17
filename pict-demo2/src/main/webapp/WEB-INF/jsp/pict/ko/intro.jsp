@@ -74,7 +74,7 @@
                 <ul class="introTexts">
                     <li>
                         <span>모집 일정</span>
-                        <p>2024년 3월 29일(금) ~ 4월 30일(화) / 33일간</p>
+                        <p>2024년 3월 29일(금) ~ 5월 7일(화) / 40일간</p>
                     </li>
                     <li>
                         <span>모집 방법</span>
@@ -110,7 +110,7 @@
             <div class="introSchedule" data-aos="fade-up" data-aos-delay="800">
                     <div class="times">
                         <div class="timesInner">
-                            <p class="timeDate">3월 29일 (금) ~ 4월 30일 (화)</p>
+                            <p class="timeDate">3월 29일 (금) ~ 5월 7일 (화)</p>
                             <p class="timeTitle">참가신청</p>
                             <p class="timeText">신청서 작성 및 제출</p>
                             <p class="timeCap">*영상물 첨부</p>

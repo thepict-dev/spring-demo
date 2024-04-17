@@ -87,7 +87,7 @@
                 <ul class="introTexts eng">
                     <li>
                         <span>Application<br>Period</span>
-                        <p>March 29 – April 30, 2024</p>
+                        <p>March 29 – May 7, 2024</p>
                     </li>
                     <li>
                         <span>How to<br>apply</span>
@@ -123,7 +123,7 @@
             <div class="introSchedule" data-aos="fade-up" data-aos-delay="800">
                     <div class="times">
                         <div class="timesInner">
-                            <p class="timeDate eng">March 29 (Fri) ~ April 30 (Tue)</p>
+                            <p class="timeDate eng">March 29 (Fri) ~ May 7 (Tue)</p>
                             <p class="timeTitle eng">Application for participation</p>
                             <p class="timeText eng">Fill out and submit application form</p>
                             <p class="timeCap eng">*Attach video</p>
