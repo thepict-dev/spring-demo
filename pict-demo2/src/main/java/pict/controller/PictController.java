@@ -150,6 +150,11 @@ public class PictController {
 		return "redirect:/ko/main";
 	}
 	// 메인
+	@RequestMapping("/front/ko/main")
+	public String kommain(@ModelAttribute("pictVO") AdminVO adminVO, HttpServletRequest request, ModelMap model,
+			HttpSession session, RedirectAttributes rttr) throws Exception {
+		return "redirect:/ko/main";
+	}
 	@RequestMapping(value = "/ko/main")
 	public String main(@ModelAttribute("pictVO") PictVO pictVO, ModelMap model, HttpServletRequest request)
 			throws Exception {
