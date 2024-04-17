@@ -147,10 +147,10 @@ public class PictController {
 	@RequestMapping("/")
 	public String main(@ModelAttribute("pictVO") AdminVO adminVO, HttpServletRequest request, ModelMap model,
 			HttpSession session, RedirectAttributes rttr) throws Exception {
-		return "redirect:/front/ko/main";
+		return "redirect:/ko/main";
 	}
 	// 메인
-	@RequestMapping(value = "/front/ko/main")
+	@RequestMapping(value = "/ko/main")
 	public String main(@ModelAttribute("pictVO") PictVO pictVO, ModelMap model, HttpServletRequest request)
 			throws Exception {
 		
@@ -160,9 +160,9 @@ public class PictController {
 		model.addAttribute("size", reference_list.size());
 		model.addAttribute("pictVO", pictVO);
 		
-		return "pict/front/ko/main";
+		return "pict/ko/main";
 	}
-	@RequestMapping(value = "/front/en/main")
+	@RequestMapping(value = "/en/main")
 	public String main_en(@ModelAttribute("pictVO") PictVO pictVO, ModelMap model, HttpServletRequest request)
 			throws Exception {
 		
@@ -172,24 +172,24 @@ public class PictController {
 		model.addAttribute("size", reference_list.size());
 		model.addAttribute("pictVO", pictVO);
 		
-		return "pict/front/en/main";
+		return "pict/en/main";
 	}
 	
 	// 소개 
-	@RequestMapping(value = "/front/ko/intro")
+	@RequestMapping(value = "/ko/intro")
 	public String ko_intro(@ModelAttribute("pictVO") PictVO pictVO, ModelMap model, HttpServletRequest request)
 			throws Exception {
 
-		return "pict/front/ko/intro";
+		return "pict/ko/intro";
 	}
-	@RequestMapping(value = "/front/en/intro")
+	@RequestMapping(value = "/en/intro")
 	public String en_intro(@ModelAttribute("pictVO") PictVO pictVO, ModelMap model, HttpServletRequest request)
 			throws Exception {
 
-		return "pict/front/en/intro";
+		return "pict/en/intro";
 	}
 	// 영상 
-	@RequestMapping(value = "/front/ko/highlight")
+	@RequestMapping(value = "/ko/highlight")
 	public String highlight(@ModelAttribute("pictVO") PictVO pictVO, ModelMap model, HttpServletRequest request)
 			throws Exception {
 		pictVO.setType("main");
@@ -198,9 +198,9 @@ public class PictController {
 		model.addAttribute("resultList", reference_list);
 		model.addAttribute("size", reference_list.size());
 		model.addAttribute("pictVO", pictVO);
-		return "pict/front/ko/highlight";
+		return "pict/ko/highlight";
 	}
-	@RequestMapping(value = "/front/en/highlight")
+	@RequestMapping(value = "/en/highlight")
 	public String highlight_en(@ModelAttribute("pictVO") PictVO pictVO, ModelMap model, HttpServletRequest request)
 			throws Exception {
 		pictVO.setType("main_en");
@@ -209,64 +209,64 @@ public class PictController {
 		model.addAttribute("resultList", reference_list);
 		model.addAttribute("size", reference_list.size());
 		model.addAttribute("pictVO", pictVO);
-		return "pict/front/en/highlight";
+		return "pict/en/highlight";
 	}
 	// 공지사항 리스트  
-	@RequestMapping(value = "/front/ko/board_list")
+	@RequestMapping(value = "/ko/board_list")
 	public String front_board(@ModelAttribute("pictVO") PictVO pictVO, ModelMap model, HttpServletRequest request)
 			throws Exception {
 
 		List<?> board_list = pictService.board_list(pictVO);
 		model.addAttribute("board_list", board_list);
 		model.addAttribute("pictVO", pictVO);
-		return "pict/front/ko/board_list";
+		return "pict/ko/board_list";
 	}
-	@RequestMapping(value = "/front/en/board_list")
+	@RequestMapping(value = "/en/board_list")
 	public String front_board_en(@ModelAttribute("pictVO") PictVO pictVO, ModelMap model, HttpServletRequest request)
 			throws Exception {
 
 		List<?> board_list = pictService.board_list(pictVO);
 		model.addAttribute("board_list", board_list);
 		model.addAttribute("pictVO", pictVO);
-		return "pict/front/en/board_list";
+		return "pict/en/board_list";
 	}
 	// 뉴스 리스트  
-	@RequestMapping(value = "/front/ko/news_list")
+	@RequestMapping(value = "/ko/news_list")
 	public String news_list_f(@ModelAttribute("pictVO") PictVO pictVO, ModelMap model, HttpServletRequest request)
 			throws Exception {
 
 		List<?> news_list = pictService.news_list(pictVO);
 		model.addAttribute("news_list", news_list);
 		model.addAttribute("pictVO", pictVO);
-		return "pict/front/ko/news_list";
+		return "pict/ko/news_list";
 	}
-	@RequestMapping(value = "/front/en/news_list")
+	@RequestMapping(value = "/en/news_list")
 	public String news_list_en(@ModelAttribute("pictVO") PictVO pictVO, ModelMap model, HttpServletRequest request)
 			throws Exception {
 
 		List<?> news_list = pictService.news_list(pictVO);
 		model.addAttribute("news_list", news_list);
 		model.addAttribute("pictVO", pictVO);
-		return "pict/front/en/news_list";
+		return "pict/en/news_list";
 	}
 	// 공지사항   
-	@RequestMapping(value = "/front/ko/board_view")
+	@RequestMapping(value = "/ko/board_view")
 	public String board_view(@ModelAttribute("pictVO") PictVO pictVO, ModelMap model, HttpServletRequest request)
 			throws Exception {
 
 		pictVO = pictService.board_list_one(pictVO);
 		
 		model.addAttribute("pictVO", pictVO);
-		return "pict/front/ko/board_view";
+		return "pict/ko/board_view";
 	}
-	@RequestMapping(value = "/front/en/board_view")
+	@RequestMapping(value = "/en/board_view")
 	public String board_view_en(@ModelAttribute("pictVO") PictVO pictVO, ModelMap model, HttpServletRequest request)
 			throws Exception {
 
 		pictVO = pictService.board_list_one(pictVO);
 		
 		model.addAttribute("pictVO", pictVO);
-		return "pict/front/en/board_view";
+		return "pict/en/board_view";
 	}
 	
 

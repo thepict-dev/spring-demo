@@ -21,23 +21,23 @@
 <header>
     <div class="headerInner">
         <h1>
-            <a href="/front/en/main"><img src="/front_img/logo_en.png" alt="로고"></a>
+            <a href="/"><img src="/front_img/logo.png" alt="로고"></a>
         </h1>
         <ul class="nav">
             <li <c:if test="${main ne -1}">class="active"</c:if> >
-                <a href="/front/en/main">HOME</a>
+                <a href="/ko/main">홈</a>
             </li>
             <li <c:if test="${intro ne -1}">class="active"</c:if> >
-                <a href="/front/en/intro">ABOUT</a>
+                <a href="/ko/intro">라이징 스타 소개</a>
             </li>
             <li <c:if test="${highlight ne -1}">class="active"</c:if> >
-                <a href="/front/en/highlight">PARTICIPANTS</a>
+                <a href="/ko/highlight">참가자 구경하러 가기</a>
             </li>
             <li <c:if test="${board ne -1}">class="active"</c:if> >
-                <a href="/front/en/board_list">NEWS</a>
+                <a href="/ko/board_list">소식보기</a>
             </li>
             <li class="lang">
-            	<a href="/front/ko/main">KO</a>
+            	<a href="/en/main">EN</a>
             </li>
         </ul>
     </div>

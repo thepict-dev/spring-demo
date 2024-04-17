@@ -21,14 +21,14 @@
     <div class="subContents">
         <div class="subContInner bdInner">
             <div class="tabNav" data-aos="fade-up" data-aos-delay="500">
-                <a href="/front/ko/board_list" class="active">공지사항</a>
-                <a href="/front/ko/news_list">소식 모아보기</a>
+                <a href="/ko/board_list" class="active">공지사항</a>
+                <a href="/ko/news_list">소식 모아보기</a>
             </div>
             <div class="tabInner active" data-aos="fade-up" data-aos-delay="800">
                 <ul class="bdLists boardL">
                 	<c:forEach var="board_list" items="${board_list}" varStatus="status">
 	                    <li>
-	                        <a href="/front/ko/board_view?idx=${board_list.idx}">
+	                        <a href="/ko/board_view?idx=${board_list.idx}">
 	                            <div class="idxTit">
 	                                <span>${status.count}</span>
 	                                <p>${board_list.title}</p>
