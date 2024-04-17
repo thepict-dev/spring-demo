@@ -631,7 +631,7 @@
 }
 .bdLists li a{
     display: grid;
-    grid-template-columns: 85% 15%;
+    grid-template-columns: 88% 12%;
     align-items: center;
     font-size: 24px;
     font-weight: 700;
@@ -640,7 +640,6 @@
 }
 .bdLists li a > p{
     white-space: nowrap;
-    text-align: right;
 }
 .idxTit{
     display: flex;
