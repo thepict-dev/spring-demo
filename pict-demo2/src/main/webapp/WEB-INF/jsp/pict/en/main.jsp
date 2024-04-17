@@ -175,8 +175,37 @@
             </div>
         </div>
     </div>
-
+	<div class="videoModal">
+	    <div class="iframeContainer">
+	        <button></button>
+	        <iframe id="modals" width="560" height="315" src="https://www.youtube.com/embed/WvUxI5fbAlY?si=5cG0fDCNWgkZAYkB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+	    </div>
+	</div>
 </main>
+<script>
+	function clickev(videourl){
+		//비디오 모달
+		const modal = document.querySelector(".videoModal");
+		console.log(videourl)
+		document.getElementById("modals").src = videourl;
+		$('.videoModal').css("display", "flex")
+	
+		
+		//모달창의 x를 누르면 모달창이 사라진다.
+		//const closeBtn = modal.querySelector(".close-area");
+		//closeBtn.addEventListener("click", evt => {
+		//   modal.style.display = "none";
+		//});
+		
+		//모달창의 바깥 영역을 클릭하면 꺼지게 한다.
+		modal.addEventListener("click", e=>{
+		  const evTarget = e.target;
+		  if(evTarget.classList.contains("videoModal")){
+			  $('.videoModal').css("display", "none")
+		  }
+		});
+	}
+</script>
 <%@ include file="./include/footer.jsp" %>
 <script src="https://player.vimeo.com/api/player.js"></script>
 
