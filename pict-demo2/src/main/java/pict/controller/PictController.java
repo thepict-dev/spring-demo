@@ -162,6 +162,11 @@ public class PictController {
 		
 		return "pict/ko/main";
 	}
+	@RequestMapping("/front/en/main")
+	public String emmain(@ModelAttribute("pictVO") AdminVO adminVO, HttpServletRequest request, ModelMap model,
+			HttpSession session, RedirectAttributes rttr) throws Exception {
+		return "redirect:/en/main";
+	}
 	@RequestMapping(value = "/en/main")
 	public String main_en(@ModelAttribute("pictVO") PictVO pictVO, ModelMap model, HttpServletRequest request)
 			throws Exception {
