@@ -214,7 +214,6 @@
 	});
 </script>
 <%@ include file="./include/footer.jsp" %>
-<script src="https://player.vimeo.com/api/player.js"></script>
 
 
 
