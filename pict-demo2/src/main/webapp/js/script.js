@@ -120,36 +120,76 @@ const swiper1 = new Swiper('.swiper-container', {
 
 // 컨텐츠 로드(더보기)
 $(function(){
-    $(".videoList ul li").slice(0, 12).css('display', 'block'); // 초기갯수
-    $(".moreButton button").click(function(e){ // 클릭시 more
-        // e.preventDefault();
-        $(".videoList ul li:hidden").slice(0, 12).css('display', 'block'); // 클릭시 more 갯수 지저정
-        if($(".videoList ul li:hidden").length === 0){ // 컨텐츠 남아있는지 확인
-            $(".moreButton button").hide() // 컨텐츠 없을시 버튼 없앰
+    // 초기에 10개의 리스트 아이템만 표시
+    $(".videoList ul li").slice(0, 12).css('display', 'block');
+
+    // 초기 상태에서 버튼의 표시 여부를 결정
+    if ($(".videoList ul li").length <= 12) {
+        $(".moreButton button").hide(); // 10개 이하면 버튼 숨기기
+    } else {
+        $(".moreButton button").show(); // 11개 이상이면 버튼 표시
+    }
+
+    // '더보기' 버튼 클릭 이벤트
+    $(".moreButton button").click(function(e){
+        e.preventDefault();
+        // 숨겨진 리스트 아이템 10개 추가 표시
+        $(".videoList ul li:hidden").slice(0, 12).css('display', 'block');
+
+        // 더 이상 표시할 아이템이 없으면 버튼 숨기기
+        if($(".videoList ul li:hidden").length === 0){
+            $(".moreButton button").hide();
         }
     });
 });
 
 // 컨텐츠 로드(더보기)
 $(function(){
-    $(".bdLists.boardL li").slice(0, 10).css('display', 'block'); // 초기갯수
-    $(".moreButton.bd button").click(function(e){ // 클릭시 more
+    // 초기에 10개의 리스트 아이템만 표시
+    $(".bdLists.boardL li").slice(0, 10).css('display', 'block');
+
+    // 초기 상태에서 버튼의 표시 여부를 결정
+    if ($(".bdLists.boardL li").length <= 10) {
+        $(".moreButton.bd button").hide(); // 10개 이하면 버튼 숨기기
+    } else {
+        $(".moreButton.bd button").show(); // 11개 이상이면 버튼 표시
+    }
+
+    // '더보기' 버튼 클릭 이벤트
+    $(".moreButton.bd button").click(function(e){
         e.preventDefault();
-        $(".bdLists.boardL li:hidden").slice(0, 10).css('display', 'block'); // 클릭시 more 갯수 지저정
-        if($(".bdLists.boardL li:hidden").length === 0){ // 컨텐츠 남아있는지 확인
-            $(".moreButton.bd button").hide() // 컨텐츠 없을시 버튼 없앰
+        // 숨겨진 리스트 아이템 10개 추가 표시
+        $(".bdLists.boardL li:hidden").slice(0, 10).css('display', 'block');
+
+        // 더 이상 표시할 아이템이 없으면 버튼 숨기기
+        if($(".bdLists.boardL li:hidden").length === 0){
+            $(".moreButton.bd button").hide();
         }
     });
 });
 
+
 // 컨텐츠 로드(더보기)
 $(function(){
-    $(".bdLists.news li").slice(0, 10).css('display', 'block'); // 초기갯수
-    $(".moreButton.bd.news button").click(function(e){ // 클릭시 more
+    // 초기에 10개의 리스트 아이템만 표시
+    $(".bdLists.news li").slice(0, 10).css('display', 'block');
+
+    // 초기 상태에서 버튼의 표시 여부를 결정
+    if ($(".bdLists.news li").length <= 10) {
+        $(".moreButton.bd.news button").hide(); // 10개 이하면 버튼 숨기기
+    } else {
+        $(".moreButton.bd.news button").show(); // 11개 이상이면 버튼 표시
+    }
+
+    // '더보기' 버튼 클릭 이벤트
+    $(".moreButton.bd.news button").click(function(e){
         e.preventDefault();
-        $(".bdLists.news li:hidden").slice(0, 10).css('display', 'block'); // 클릭시 more 갯수 지저정
-        if($(".bdLists.news li:hidden").length === 0){ // 컨텐츠 남아있는지 확인
-            $(".moreButton.bd.news button").hide() // 컨텐츠 없을시 버튼 없앰
+        // 숨겨진 리스트 아이템 10개 추가 표시
+        $(".bdLists.news li:hidden").slice(0, 10).css('display', 'block');
+
+        // 더 이상 표시할 아이템이 없으면 버튼 숨기기
+        if($(".bdLists.news li:hidden").length === 0){
+            $(".moreButton.bd.news button").hide();
         }
     });
 });
