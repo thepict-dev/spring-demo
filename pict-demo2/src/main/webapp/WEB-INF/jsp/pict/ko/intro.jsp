@@ -118,7 +118,7 @@
                     </div>
                     <div class="times">
                         <div class="timesInner">
-                            <p class="timeDate">4월 22일 (월) ~ 5월 7일 (화)</p>
+                            <p class="timeDate">5월 8일 (수) ~ 5월 12일 (일)</p>
                             <p class="timeTitle">선발 및 통보</p>
                             <p class="timeText">본선 진출자 개별 연락</p>
                             <p class="timeCap"></p>
