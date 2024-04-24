@@ -21,7 +21,7 @@
                     and martial arts,<br>
                     pay attention to the 2024 Hangang Rising Star.
                 </p>
-                <a href="https://forms.gle/YbLi55nQuLb1pkuQ9" target="_blank" title="새창이동">
+                <a href="https://forms.gle/gZH6hTo9hCenXVhi8" target="_blank" title="새창이동">
                     <svg class="pcSvg" xmlns="http://www.w3.org/2000/svg" width="266" height="92" viewBox="0 0 266 92" fill="none">
 						<mask id="path-1-outside-1_221_161" maskUnits="userSpaceOnUse" x="2.09303" y="9" width="266" height="92" fill="black">
 						<rect fill="white" x="2.09303" y="9" width="266" height="92"/>
