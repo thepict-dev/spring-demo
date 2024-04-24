@@ -131,7 +131,7 @@
                     </div>
                     <div class="times">
                         <div class="timesInner">
-                            <p class="timeDate eng">May 8(Tue) - May 12(Sun)</p>
+                            <p class="timeDate eng">May 8(Wed) - May 12(Sun)</p>
                             <p class="timeTitle eng">Selection & Notification</p>
                             <p class="timeText eng">Qualifiers will be contacted individually</p>
                             <p class="timeCap"></p>
