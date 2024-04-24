@@ -577,7 +577,7 @@
     margin: 0 auto;
     padding: 100px 20px 150px 20px;
 }
-/* 탭 네비 */
+/* �� �ㅻ퉬 */
 
 .tabNav{
     display: flex;
@@ -697,28 +697,55 @@
     letter-spacing: -1.2px;
 }
 .bdLists.news li a > p{
-    white-space: nowrap;
-    text-align: left;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
 }
 
 .newsInfo{
     display: flex;
+    justify-content: flex-end;
     column-gap: 20px;
 }
 .newsInfo span{
     color: var(--purple-200);
     white-space: nowrap;
 }
-.newsInfo p{
+.newsInfo p:last-child{
     white-space: nowrap;
+    text-align: right;
 }
 
 @media all and (max-width : 1024px){
 	.bdLists.news li a{
-        grid-template-columns: 70% 30%;
+        grid-template-columns: 30% 70%;
         font-size: 16px;
         letter-spacing: -0.8px;
         padding: 0 16px;
+	}
+}
+@media all and (max-width : 768px){
+	.bdLists.news li a{
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: space-between;
+		align-items: flex-start;
+	    height: 60px;
+	}
+	.bdLists.news li a > p{
+	  overflow: hidden;
+	  white-space: nowrap;
+	  text-overflow: ellipsis;
+	  word-break: break-all;
+	  width: 100%;
+	  padding: 0;
+	}
+	
+	.newsInfo{
+	    column-gap: 10px;
+		align-self: flex-start;
+		width: 100%;
 	}
 }
 
