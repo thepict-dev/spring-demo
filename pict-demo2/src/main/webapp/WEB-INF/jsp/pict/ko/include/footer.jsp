@@ -38,6 +38,11 @@
                         <img src="/front_img/kakao.png" alt="">
                     </a>
                 </li>
+                <li>
+                    <a href="https://www.tiktok.com/@hangang_rising_star" target="_blank" title="새창이동">
+                        <img src="/front_img/tiktok.png" alt="">
+                    </a>
+                </li>
             </ul>
             <div class="tel">
                 <span>문의</span>
