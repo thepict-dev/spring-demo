@@ -72,7 +72,7 @@
         		<iframe id="video2" src="https://player.vimeo.com/video/933623625?h=e89428e689&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="v0.2_홍보영상_강원도청 자치법령과_(주)더픽트_20240412"></iframe>
        		</div> -->
        		<video id="videoPlayer" controls style="width: 100%;">
-			    <source src="/front_img/ko-video1.mp4" width="320" height="240" type="video/mp4" />
+			    <source src="/front_img/video1.mp4" width="320" height="240" type="video/mp4" />
 			</video>
         </a>
         <div class="videoBack"></div>
@@ -202,8 +202,8 @@
 
 	const videoPlayer = document.getElementById('videoPlayer');
 	const videoSources = [
-	    "/front_img/ko-video1.mp4",  // 첫 번째 비디오
-	    "/front_img/ko-video2.mp4"   // 두 번째 비디오
+	    "/front_img/video1.mp4",  // 첫 번째 비디오
+	    "/front_img/video2.mp4"   // 두 번째 비디오
 	];
 	let currentVideoIndex = 0;
 

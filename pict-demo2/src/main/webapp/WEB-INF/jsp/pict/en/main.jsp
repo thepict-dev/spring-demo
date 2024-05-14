@@ -80,7 +80,7 @@
     <div class="centerSec">
         <a class="video" data-aos="fade-up" data-aos-delay="500" href="#lnk">
        		<video id="videoPlayer" controls style="width: 100%;">
-			    <source src="/front_img/en-video1.mp4" width="320" height="240" type="video/mp4" />
+			    <source src="/front_img/video1.mp4" width="320" height="240" type="video/mp4" />
 			</video>
         </a>
         <div class="videoBack"></div>
@@ -210,8 +210,8 @@
 
 	const videoPlayer = document.getElementById('videoPlayer');
 	const videoSources = [
-	    "/front_img/en-video1.mp4",  // 첫 번째 비디오
-	    "/front_img/ko-video2.mp4"   // 두 번째 비디오
+	    "/front_img/video1.mp4",  // 첫 번째 비디오
+	    "/front_img/video2.mp4"   // 두 번째 비디오
 	];
 	let currentVideoIndex = 0;
 
